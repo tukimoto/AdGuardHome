@@ -56,9 +56,10 @@ func newIpsetHandler(
 	return h, nil
 }
 
-// close closes the Linux Netfilter connections.
+// close closes the Linux Netfilter connections.  close can be called on a nil
+// handler.
 func (h *ipsetHandler) close() (err error) {
-	if h.ipsetMgr != nil {
+	if h != nil && h.ipsetMgr != nil {
 		return h.ipsetMgr.Close()
 	}
 
