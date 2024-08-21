@@ -96,10 +96,10 @@ func TestManager_Add(t *testing.T) {
 	}
 
 	conf := &Config{
-		Logger:    slogutil.NewDiscardLogger(),
-		IpsetList: ipsetList,
+		Logger: slogutil.NewDiscardLogger(),
+		Lines:  ipsetList,
 	}
-	m, err := newManagerWithDialer(conf, fakeDial)
+	m, err := newManagerWithDialer(testutil.ContextWithTimeout(t, testTimeout), conf, fakeDial)
 	require.NoError(t, err)
 
 	ip4 := net.IP{1, 2, 3, 4}

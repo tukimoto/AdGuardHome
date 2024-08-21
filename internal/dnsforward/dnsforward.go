@@ -616,7 +616,7 @@ func (s *Server) prepareInternalDNS() (err error) {
 	}
 
 	ipsetLogger := s.logger.With(slogutil.KeyPrefix, "ipset")
-	s.ipset, err = newIpsetHandler(ipsetLogger, ipsetList)
+	s.ipset, err = newIpsetHandler(context.TODO(), ipsetLogger, ipsetList)
 	if err != nil {
 		// Don't wrap the error, because it's informative enough as is.
 		return err

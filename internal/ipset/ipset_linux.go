@@ -36,8 +36,8 @@ import (
 //     resolved IP addresses.
 
 // newManager returns a new Linux ipset manager.
-func newManager(conf *Config) (set Manager, err error) {
-	return newManagerWithDialer(conf, defaultDial)
+func newManager(ctx context.Context, conf *Config) (set Manager, err error) {
+	return newManagerWithDialer(ctx, conf, defaultDial)
 }
 
 // defaultDial is the default netfilter dialing function.
@@ -258,7 +258,7 @@ func parseIpsetConfigLine(confStr string) (hosts, ipsetNames []string, err error
 
 // parseIpsetConfig parses the ipset configuration and stores ipsets.  It
 // returns an error if the configuration can't be used.
-func (m *manager) parseIpsetConfig(ipsetConf []string) (err error) {
+func (m *manager) parseIpsetConfig(ctx context.Context, ipsetConf []string) (err error) {
 	// The family doesn't seem to matter when we use a header query, so query
 	// only the IPv4 one.
 	//
@@ -282,7 +282,7 @@ func (m *manager) parseIpsetConfig(ipsetConf []string) (err error) {
 		}
 
 		var ipsets []props
-		ipsets, err = m.ipsets(ipsetNames, currentlyKnown)
+		ipsets, err = m.ipsets(ctx, ipsetNames, currentlyKnown)
 		if err != nil {
 			return fmt.Errorf("getting ipsets from config line at idx %d: %w", i, err)
 		}
@@ -332,7 +332,11 @@ func (m *manager) ipsetProps(name string) (p props, err error) {
 
 // ipsets returns ipset properties of currently known ipsets.  It also makes an
 // additional ipset header data query if needed.
-func (m *manager) ipsets(names []string, currentlyKnown map[string]props) (sets []props, err error) {
+func (m *manager) ipsets(
+	ctx context.Context,
+	names []string,
+	currentlyKnown map[string]props,
+) (sets []props, err error) {
 	for _, n := range names {
 		p, ok := currentlyKnown[n]
 		if !ok {
@@ -340,7 +344,8 @@ func (m *manager) ipsets(names []string, currentlyKnown map[string]props) (sets 
 		}
 
 		if p.family != netfilter.ProtoIPv4 && p.family != netfilter.ProtoIPv6 {
-			m.logger.Debug(
+			m.logger.DebugContext(
+				ctx,
 				"got unexpected ipset family while getting set properties",
 				"set_name", p.name,
 				"set_type", p.typeName,
@@ -362,7 +367,7 @@ func (m *manager) ipsets(names []string, currentlyKnown map[string]props) (sets 
 
 // newManagerWithDialer returns a new Linux ipset manager using the provided
 // dialer.
-func newManagerWithDialer(conf *Config, dial dialer) (mgr Manager, err error) {
+func newManagerWithDialer(ctx context.Context, conf *Config, dial dialer) (mgr Manager, err error) {
 	defer func() { err = errors.Annotate(err, "ipset: %w") }()
 
 	m := &manager{
@@ -383,7 +388,7 @@ func newManagerWithDialer(conf *Config, dial dialer) (mgr Manager, err error) {
 		if errors.Is(err, unix.EPROTONOSUPPORT) {
 			// The implementation doesn't support this protocol version.  Just
 			// issue a warning.
-			m.logger.Warn("dialing netfilter", slogutil.KeyError, err)
+			m.logger.WarnContext(ctx, "dialing netfilter", slogutil.KeyError, err)
 
 			return nil, nil
 		}
@@ -391,12 +396,12 @@ func newManagerWithDialer(conf *Config, dial dialer) (mgr Manager, err error) {
 		return nil, fmt.Errorf("dialing netfilter: %w", err)
 	}
 
-	err = m.parseIpsetConfig(conf.IpsetList)
+	err = m.parseIpsetConfig(ctx, conf.Lines)
 	if err != nil {
 		return nil, fmt.Errorf("getting ipsets: %w", err)
 	}
 
-	m.logger.Debug("initialized")
+	m.logger.DebugContext(ctx, "initialized")
 
 	return m, nil
 }

@@ -22,23 +22,23 @@ type Config struct {
 	// not be nil.
 	Logger *slog.Logger
 
-	// IpsetList is the ipset configuration with the following syntax:
+	// Lines is the ipset configuration with the following syntax:
 	//
 	//	DOMAIN[,DOMAIN].../IPSET_NAME[,IPSET_NAME]...
 	//
-	// IpsetList must not contain any blank lines or comments.
-	IpsetList []string
+	// Lines must not contain any blank lines or comments.
+	Lines []string
 }
 
 // NewManager returns a new ipset manager.  IPv4 addresses are added to an ipset
 // with an ipv4 family; IPv6 addresses, to an ipv6 ipset.  ipset must exist.
 //
-// If conf.IpsetList is empty, mgr and err are nil.  The error's chain contains
+// If conf.Lines is empty, mgr and err are nil.  The error's chain contains
 // [errors.ErrUnsupported] if current OS is not supported.
-func NewManager(conf *Config) (mgr Manager, err error) {
-	if len(conf.IpsetList) == 0 {
+func NewManager(ctx context.Context, conf *Config) (mgr Manager, err error) {
+	if len(conf.Lines) == 0 {
 		return nil, nil
 	}
 
-	return newManager(conf)
+	return newManager(ctx, conf)
 }

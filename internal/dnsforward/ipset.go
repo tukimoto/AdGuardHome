@@ -22,14 +22,19 @@ type ipsetHandler struct {
 
 // newIpsetHandler returns a new initialized [ipsetHandler].  It is not safe for
 // concurrent use.  c is always non-nil for [Server.Close].
-func newIpsetHandler(logger *slog.Logger, ipsetList []string) (c *ipsetHandler, err error) {
-	c = &ipsetHandler{
+func newIpsetHandler(
+	ctx context.Context,
+	logger *slog.Logger,
+	ipsetList []string,
+) (h *ipsetHandler, err error) {
+	h = &ipsetHandler{
 		logger: logger,
 	}
-	c.ipsetMgr, err = ipset.NewManager(&ipset.Config{
-		Logger:    logger,
-		IpsetList: ipsetList,
-	})
+	conf := &ipset.Config{
+		Logger: logger,
+		Lines:  ipsetList,
+	}
+	h.ipsetMgr, err = ipset.NewManager(ctx, conf)
 	if errors.Is(err, os.ErrInvalid) ||
 		errors.Is(err, os.ErrPermission) ||
 		errors.Is(err, errors.ErrUnsupported) {
@@ -41,26 +46,27 @@ func newIpsetHandler(logger *slog.Logger, ipsetList []string) (c *ipsetHandler, 
 		//
 		// TODO(a.garipov): The Snap problem can probably be solved if we add
 		// the netlink-connector interface plug.
-		logger.Warn("cannot initialize", slogutil.KeyError, err)
+		logger.WarnContext(ctx, "cannot initialize", slogutil.KeyError, err)
 
-		return c, nil
+		return h, nil
 	} else if err != nil {
-		return c, fmt.Errorf("initializing ipset: %w", err)
+		return h, fmt.Errorf("initializing ipset: %w", err)
 	}
 
-	return c, nil
+	return h, nil
 }
 
 // close closes the Linux Netfilter connections.
-func (c *ipsetHandler) close() (err error) {
-	if c.ipsetMgr != nil {
-		return c.ipsetMgr.Close()
+func (h *ipsetHandler) close() (err error) {
+	if h.ipsetMgr != nil {
+		return h.ipsetMgr.Close()
 	}
 
 	return nil
 }
 
-func (c *ipsetHandler) dctxIsfilled(dctx *dnsContext) (ok bool) {
+// dctxIsFilled returns true if dctx has enough information to process.
+func dctxIsFilled(dctx *dnsContext) (ok bool) {
 	return dctx != nil &&
 		dctx.responseFromUpstream &&
 		dctx.proxyCtx != nil &&
@@ -71,8 +77,8 @@ func (c *ipsetHandler) dctxIsfilled(dctx *dnsContext) (ok bool) {
 
 // skipIpsetProcessing returns true when the ipset processing can be skipped for
 // this request.
-func (c *ipsetHandler) skipIpsetProcessing(dctx *dnsContext) (ok bool) {
-	if c == nil || c.ipsetMgr == nil || !c.dctxIsfilled(dctx) {
+func (h *ipsetHandler) skipIpsetProcessing(dctx *dnsContext) (ok bool) {
+	if h == nil || h.ipsetMgr == nil || !dctxIsFilled(dctx) {
 		return true
 	}
 
@@ -114,13 +120,13 @@ func ipsFromAnswer(ans []dns.RR) (ip4s, ip6s []net.IP) {
 }
 
 // process adds the resolved IP addresses to the domain's ipsets, if any.
-func (c *ipsetHandler) process(dctx *dnsContext) (rc resultCode) {
-	c.logger.Debug("started processing")
-	defer c.logger.Debug("finished processing")
-
+func (h *ipsetHandler) process(dctx *dnsContext) (rc resultCode) {
+	// TODO(s.chzhen):  Use passed context.
 	ctx := context.TODO()
+	h.logger.DebugContext(ctx, "started processing")
+	defer h.logger.DebugContext(ctx, "finished processing")
 
-	if c.skipIpsetProcessing(dctx) {
+	if h.skipIpsetProcessing(dctx) {
 		return resultCodeSuccess
 	}
 
@@ -130,15 +136,15 @@ func (c *ipsetHandler) process(dctx *dnsContext) (rc resultCode) {
 	host = strings.ToLower(host)
 
 	ip4s, ip6s := ipsFromAnswer(dctx.proxyCtx.Res.Answer)
-	n, err := c.ipsetMgr.Add(ctx, host, ip4s, ip6s)
+	n, err := h.ipsetMgr.Add(ctx, host, ip4s, ip6s)
 	if err != nil {
 		// Consider ipset errors non-critical to the request.
-		c.logger.ErrorContext(ctx, "adding host ips", slogutil.KeyError, err)
+		h.logger.ErrorContext(ctx, "adding host ips", slogutil.KeyError, err)
 
 		return resultCodeSuccess
 	}
 
-	c.logger.DebugContext(ctx, "added new ipset entries", "num", n)
+	h.logger.DebugContext(ctx, "added new ipset entries", "num", n)
 
 	return resultCodeSuccess
 }
