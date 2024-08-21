@@ -8,6 +8,7 @@ import (
 	"testing"
 
 	"github.com/AdguardTeam/golibs/errors"
+	"github.com/AdguardTeam/golibs/logutil/slogutil"
 	"github.com/digineo/go-ipset/v2"
 	"github.com/mdlayher/netlink"
 	"github.com/stretchr/testify/assert"
@@ -89,7 +90,7 @@ func TestManager_Add(t *testing.T) {
 		}, nil
 	}
 
-	m, err := newManagerWithDialer(ipsetConf, fakeDial)
+	m, err := newManagerWithDialer(slogutil.NewDiscardLogger(), ipsetConf, fakeDial)
 	require.NoError(t, err)
 
 	ip4 := net.IP{1, 2, 3, 4}

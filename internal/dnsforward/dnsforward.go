@@ -134,7 +134,7 @@ type Server struct {
 	localDomainSuffix string
 
 	// ipset processes DNS requests using ipset data.
-	ipset ipsetCtx
+	ipset *ipsetCtx
 
 	// privateNets is the configured set of IP networks considered private.
 	privateNets netutil.SubnetSet
@@ -609,9 +609,15 @@ func (s *Server) prepareLocalResolvers() (uc *proxy.UpstreamConfig, err error) {
 // the primary DNS proxy instance.  It assumes s.serverLock is locked or the
 // Server not running.
 func (s *Server) prepareInternalDNS() (err error) {
-	err = s.prepareIpsetListSettings()
+	ipsetConf, err := s.prepareIpsetListSettings()
 	if err != nil {
 		return fmt.Errorf("preparing ipset settings: %w", err)
+	}
+
+	s.ipset, err = newIPSetCtx(s.logger, ipsetConf)
+	if err != nil {
+		// Don't wrap the error, because it's informative enough as is.
+		return err
 	}
 
 	bootOpts := &upstream.Options{

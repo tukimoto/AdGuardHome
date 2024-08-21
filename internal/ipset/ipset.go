@@ -2,6 +2,7 @@
 package ipset
 
 import (
+	"log/slog"
 	"net"
 )
 
@@ -24,10 +25,10 @@ type Manager interface {
 //
 // If ipsetConf is empty, msg and err are nil.  The error's chain contains
 // [errors.ErrUnsupported] if current OS is not supported.
-func NewManager(ipsetConf []string) (mgr Manager, err error) {
+func NewManager(logger *slog.Logger, ipsetConf []string) (mgr Manager, err error) {
 	if len(ipsetConf) == 0 {
 		return nil, nil
 	}
 
-	return newManager(ipsetConf)
+	return newManager(logger, ipsetConf)
 }

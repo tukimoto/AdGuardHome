@@ -2,26 +2,31 @@ package dnsforward
 
 import (
 	"fmt"
+	"log/slog"
 	"net"
 	"os"
 	"strings"
 
 	"github.com/AdguardTeam/AdGuardHome/internal/ipset"
 	"github.com/AdguardTeam/golibs/errors"
-	"github.com/AdguardTeam/golibs/log"
+	"github.com/AdguardTeam/golibs/logutil/slogutil"
 	"github.com/miekg/dns"
 )
 
 // ipsetCtx is the ipset context.  ipsetMgr can be nil.
 type ipsetCtx struct {
 	ipsetMgr ipset.Manager
+	logger   *slog.Logger
 }
 
-// init initializes the ipset context.  It is not safe for concurrent use.
-//
-// TODO(a.garipov): Rewrite into a simple constructor?
-func (c *ipsetCtx) init(ipsetConf []string) (err error) {
-	c.ipsetMgr, err = ipset.NewManager(ipsetConf)
+// newIPSetCtx returns a new initialized [ipsetCtx].  It is not safe for
+// concurrent use.
+func newIPSetCtx(logger *slog.Logger, ipsetConf []string) (c *ipsetCtx, err error) {
+	c = &ipsetCtx{
+		logger: logger,
+	}
+	ipsetLogger := logger.With(slogutil.KeyPrefix, "ipset")
+	c.ipsetMgr, err = ipset.NewManager(ipsetLogger, ipsetConf)
 	if errors.Is(err, os.ErrInvalid) || errors.Is(err, os.ErrPermission) {
 		// ipset cannot currently be initialized if the server was installed
 		// from Snap or when the user or the binary doesn't have the required
@@ -31,18 +36,18 @@ func (c *ipsetCtx) init(ipsetConf []string) (err error) {
 		//
 		// TODO(a.garipov): The Snap problem can probably be solved if we add
 		// the netlink-connector interface plug.
-		log.Info("ipset: warning: cannot initialize: %s", err)
+		logger.Warn("ipset: cannot initialize", slogutil.KeyError, err)
 
-		return nil
+		return c, nil
 	} else if errors.Is(err, errors.ErrUnsupported) {
-		log.Info("ipset: warning: %s", err)
+		logger.Warn("ipset: cannot initialize", slogutil.KeyError, err)
 
-		return nil
+		return c, nil
 	} else if err != nil {
-		return fmt.Errorf("initializing ipset: %w", err)
+		return nil, fmt.Errorf("initializing ipset: %w", err)
 	}
 
-	return nil
+	return c, nil
 }
 
 // close closes the Linux Netfilter connections.
@@ -109,14 +114,12 @@ func ipsFromAnswer(ans []dns.RR) (ip4s, ip6s []net.IP) {
 
 // process adds the resolved IP addresses to the domain's ipsets, if any.
 func (c *ipsetCtx) process(dctx *dnsContext) (rc resultCode) {
-	log.Debug("dnsforward: ipset: started processing")
-	defer log.Debug("dnsforward: ipset: finished processing")
+	c.logger.Debug("ipset: started processing")
+	defer c.logger.Debug("ipset: finished processing")
 
 	if c.skipIpsetProcessing(dctx) {
 		return resultCodeSuccess
 	}
-
-	log.Debug("ipset: starting processing")
 
 	req := dctx.proxyCtx.Req
 	host := req.Question[0].Name
@@ -127,12 +130,12 @@ func (c *ipsetCtx) process(dctx *dnsContext) (rc resultCode) {
 	n, err := c.ipsetMgr.Add(host, ip4s, ip6s)
 	if err != nil {
 		// Consider ipset errors non-critical to the request.
-		log.Error("dnsforward: ipset: adding host ips: %s", err)
+		c.logger.Error("ipset: adding host ips", slogutil.KeyError, err)
 
 		return resultCodeSuccess
 	}
 
-	log.Debug("dnsforward: ipset: added %d new ipset entries", n)
+	c.logger.Debug("ipset: added new ipset entries", "num", n)
 
 	return resultCodeSuccess
 }
