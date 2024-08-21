@@ -159,7 +159,7 @@ type Config struct {
 	// IpsetList is the ipset configuration that allows AdGuard Home to add IP
 	// addresses of the specified domain names to an ipset list.  Syntax:
 	//
-	//	DOMAIN[,DOMAIN].../IPSET_NAME
+	//	DOMAIN[,DOMAIN].../IPSET_NAME[,IPSET_NAME]...
 	//
 	// This field is ignored if [IpsetListFileName] is set.
 	IpsetList []string `yaml:"ipset"`
@@ -470,7 +470,7 @@ func (s *Server) prepareIpsetListSettings() (ipsets []string, err error) {
 	}
 
 	ipsets = stringutil.SplitTrimmed(string(data), "\n")
-	ipsets = stringutil.FilterOut(ipsets, IsCommentOrEmpty)
+	slices.DeleteFunc(ipsets, IsCommentOrEmpty)
 
 	log.Debug("dns: using %d ipset rules from file %q", len(ipsets), fn)
 

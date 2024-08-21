@@ -4,6 +4,7 @@ package ipset
 
 import (
 	"bytes"
+	"context"
 	"fmt"
 	"log/slog"
 	"net"
@@ -35,8 +36,8 @@ import (
 //     resolved IP addresses.
 
 // newManager returns a new Linux ipset manager.
-func newManager(logger *slog.Logger, ipsetConf []string) (set Manager, err error) {
-	return newManagerWithDialer(logger, ipsetConf, defaultDial)
+func newManager(conf *Config) (set Manager, err error) {
+	return newManagerWithDialer(conf, defaultDial)
 }
 
 // defaultDial is the default netfilter dialing function.
@@ -339,8 +340,8 @@ func (m *manager) ipsets(names []string, currentlyKnown map[string]props) (sets 
 		}
 
 		if p.family != netfilter.ProtoIPv4 && p.family != netfilter.ProtoIPv6 {
-			m.logger.Debug("getting properties",
-				slogutil.KeyError, "unexpected ipset family",
+			m.logger.Debug(
+				"got unexpected ipset family while getting set properties",
 				"set_name", p.name,
 				"set_type", p.typeName,
 				"set_family", p.family,
@@ -361,11 +362,7 @@ func (m *manager) ipsets(names []string, currentlyKnown map[string]props) (sets 
 
 // newManagerWithDialer returns a new Linux ipset manager using the provided
 // dialer.
-func newManagerWithDialer(
-	logger *slog.Logger,
-	ipsetConf []string,
-	dial dialer,
-) (mgr Manager, err error) {
+func newManagerWithDialer(conf *Config, dial dialer) (mgr Manager, err error) {
 	defer func() { err = errors.Annotate(err, "ipset: %w") }()
 
 	m := &manager{
@@ -374,7 +371,7 @@ func newManagerWithDialer(
 		nameToIpset:    make(map[string]props),
 		domainToIpsets: make(map[string][]props),
 
-		logger: logger,
+		logger: conf.Logger,
 
 		dial: dial,
 
@@ -386,7 +383,7 @@ func newManagerWithDialer(
 		if errors.Is(err, unix.EPROTONOSUPPORT) {
 			// The implementation doesn't support this protocol version.  Just
 			// issue a warning.
-			logger.Warn("dialing netfilter", slogutil.KeyError, err)
+			m.logger.Warn("dialing netfilter", slogutil.KeyError, err)
 
 			return nil, nil
 		}
@@ -394,12 +391,12 @@ func newManagerWithDialer(
 		return nil, fmt.Errorf("dialing netfilter: %w", err)
 	}
 
-	err = m.parseIpsetConfig(ipsetConf)
+	err = m.parseIpsetConfig(conf.IpsetList)
 	if err != nil {
 		return nil, fmt.Errorf("getting ipsets: %w", err)
 	}
 
-	logger.Debug("initialized")
+	m.logger.Debug("initialized")
 
 	return m, nil
 }
@@ -486,6 +483,7 @@ func (m *manager) addIPs(host string, set props, ips []net.IP) (n int, err error
 
 // addToSets adds the IP addresses to the corresponding ipset.
 func (m *manager) addToSets(
+	ctx context.Context,
 	host string,
 	ip4s []net.IP,
 	ip6s []net.IP,
@@ -508,7 +506,9 @@ func (m *manager) addToSets(
 			return n, fmt.Errorf("%q %q unexpected family %q", set.name, set.typeName, set.family)
 		}
 
-		m.logger.Debug("added ips to set",
+		m.logger.DebugContext(
+			ctx,
+			"added ips to set",
 			"ips_num", nn,
 			"set_name", set.name,
 			"set_type", set.typeName,
@@ -521,7 +521,7 @@ func (m *manager) addToSets(
 }
 
 // Add implements the [Manager] interface for *manager.
-func (m *manager) Add(host string, ip4s, ip6s []net.IP) (n int, err error) {
+func (m *manager) Add(ctx context.Context, host string, ip4s, ip6s []net.IP) (n int, err error) {
 	m.mu.Lock()
 	defer m.mu.Unlock()
 
@@ -530,9 +530,9 @@ func (m *manager) Add(host string, ip4s, ip6s []net.IP) (n int, err error) {
 		return 0, nil
 	}
 
-	m.logger.Debug("found sets", "set_num", len(sets))
+	m.logger.DebugContext(ctx, "found sets", "set_num", len(sets))
 
-	return m.addToSets(host, ip4s, ip6s, sets)
+	return m.addToSets(ctx, host, ip4s, ip6s, sets)
 }
 
 // Close implements the [Manager] interface for *manager.
