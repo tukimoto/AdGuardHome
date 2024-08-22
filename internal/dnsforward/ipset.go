@@ -21,7 +21,7 @@ type ipsetHandler struct {
 }
 
 // newIpsetHandler returns a new initialized [ipsetHandler].  It is not safe for
-// concurrent use.  c is always non-nil for [Server.Close].
+// concurrent use.
 func newIpsetHandler(
 	ctx context.Context,
 	logger *slog.Logger,
@@ -50,7 +50,7 @@ func newIpsetHandler(
 
 		return h, nil
 	} else if err != nil {
-		return h, fmt.Errorf("initializing ipset: %w", err)
+		return nil, fmt.Errorf("initializing ipset: %w", err)
 	}
 
 	return h, nil
