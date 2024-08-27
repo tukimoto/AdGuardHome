@@ -10,11 +10,11 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/golibs/osutil"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 // Variables and functions to substitute in tests.

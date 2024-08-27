@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 func TestMain(m *testing.M) {
@@ -40,7 +40,7 @@ const (
 
 	// testRuleTextCosmetic is a cosmetic rule with a zero-width non-joiner.
 	//
-	// See https://github.com/AdguardTeam/AdGuardHome/issues/6003.
+	// See https://github.com/tukimoto/AdGuardHome/issues/6003.
 	testRuleTextCosmetic = "||cosmetic.example## :has-text(/\u200c/i)\n"
 )
 

@@ -93,7 +93,7 @@ func InitAuth(
 	if err != nil {
 		log.Error("auth: open DB: %s: %s", dbFilename, err)
 		if err.Error() == "invalid argument" {
-			log.Error("AdGuard Home cannot be initialized due to an incompatible file system.\nPlease read the explanation here: https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started#limitations")
+			log.Error("AdGuard Home cannot be initialized due to an incompatible file system.\nPlease read the explanation here: https://github.com/tukimoto/AdGuardHome/wiki/Getting-Started#limitations")
 		}
 
 		return nil

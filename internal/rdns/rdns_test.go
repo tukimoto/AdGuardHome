@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghtest"
-	"github.com/AdguardTeam/AdGuardHome/internal/rdns"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/aghtest"
+	"github.com/tukimoto/AdGuardHome/internal/rdns"
 )
 
 func TestDefault_Process(t *testing.T) {

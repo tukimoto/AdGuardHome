@@ -11,9 +11,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/stringutil"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 func newARPDB() (arp *arpdbs) {
@@ -46,7 +46,7 @@ func newARPDB() (arp *arpdbs) {
 			// By default ARP attempts to resolve the hostnames via DNS.  See
 			// man 8 arp.
 			//
-			// See also https://github.com/AdguardTeam/AdGuardHome/issues/3157.
+			// See also https://github.com/tukimoto/AdGuardHome/issues/3157.
 			args: []string{"-a", "-n"},
 		},
 		// Finally, try "ip neigh".

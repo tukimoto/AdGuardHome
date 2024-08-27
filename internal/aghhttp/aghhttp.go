@@ -6,9 +6,9 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/version"
 	"github.com/AdguardTeam/golibs/httphdr"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/version"
 )
 
 // HTTP scheme constants.

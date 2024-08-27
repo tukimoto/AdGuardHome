@@ -6,13 +6,13 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/agh"
-	"github.com/AdguardTeam/AdGuardHome/internal/rdns"
-	"github.com/AdguardTeam/AdGuardHome/internal/whois"
 	"github.com/AdguardTeam/dnsproxy/proxy"
 	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
+	"github.com/tukimoto/AdGuardHome/internal/next/agh"
+	"github.com/tukimoto/AdGuardHome/internal/rdns"
+	"github.com/tukimoto/AdGuardHome/internal/whois"
 )
 
 // Interface Mocks

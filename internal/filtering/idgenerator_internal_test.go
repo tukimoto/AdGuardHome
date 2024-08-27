@@ -3,9 +3,9 @@ package filtering
 import (
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghalg"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/stretchr/testify/assert"
+	"github.com/tukimoto/AdGuardHome/internal/aghalg"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 func TestIDGenerator_Fix(t *testing.T) {

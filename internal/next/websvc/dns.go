@@ -7,8 +7,8 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/dnssvc"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/next/dnssvc"
 )
 
 // DNS Settings Handlers

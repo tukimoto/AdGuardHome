@@ -9,8 +9,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/safesearch"
 	"github.com/AdguardTeam/dnsproxy/proxy"
 	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/container"
@@ -18,6 +16,8 @@ import (
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/google/uuid"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/safesearch"
 )
 
 // UID is the type for the unique IDs of persistent clients.

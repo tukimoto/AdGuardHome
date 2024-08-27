@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 // validateFilterURL validates the filter list URL or file name.

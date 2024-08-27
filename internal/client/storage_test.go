@@ -5,11 +5,11 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/client"
-	"github.com/AdguardTeam/AdGuardHome/internal/whois"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/client"
+	"github.com/tukimoto/AdGuardHome/internal/whois"
 )
 
 // newStorage is a helper function that returns a client storage filled with

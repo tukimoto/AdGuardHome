@@ -8,9 +8,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 func TestServer_notImplemented(t *testing.T) {

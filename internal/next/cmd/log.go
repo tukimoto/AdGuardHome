@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 // syslogServiceName is the name of the AdGuard Home service used for writing

@@ -14,13 +14,13 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghalg"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
-	"github.com/AdguardTeam/AdGuardHome/internal/version"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/quic-go/quic-go/http3"
+	"github.com/tukimoto/AdGuardHome/internal/aghalg"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
+	"github.com/tukimoto/AdGuardHome/internal/version"
 )
 
 // getAddrsResponse is the response for /install/get_addresses endpoint.

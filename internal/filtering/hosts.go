@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/netip"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/AdguardTeam/golibs/hostsfile"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/urlfilter/rules"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 // matchSysHosts tries to match the host against the operating system's hosts

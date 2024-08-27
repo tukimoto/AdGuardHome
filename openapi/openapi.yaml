@@ -7,7 +7,7 @@
   'version': '0.107'
   'contact':
     'name': 'AdGuard Home'
-    'url': 'https://github.com/AdguardTeam/AdGuardHome'
+    'url': 'https://github.com/tukimoto/AdGuardHome'
 
 'servers':
 - 'url': '/control'
@@ -1787,7 +1787,7 @@
         'announcement_url':
           'type': 'string'
           'example': >
-            https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.9
+            https://github.com/tukimoto/AdGuardHome/releases/tag/v0.9
         'can_autoupdate':
           'type': 'boolean'
     'Stats':

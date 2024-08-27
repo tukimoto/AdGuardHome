@@ -4,9 +4,9 @@ import (
 	"crypto/tls"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghtls"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/tukimoto/AdGuardHome/internal/aghtls"
 )
 
 func TestMain(m *testing.M) {

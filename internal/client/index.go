@@ -7,8 +7,8 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghalg"
 	"github.com/AdguardTeam/golibs/errors"
+	"github.com/tukimoto/AdGuardHome/internal/aghalg"
 	"golang.org/x/exp/maps"
 )
 

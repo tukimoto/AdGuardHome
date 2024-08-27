@@ -4,10 +4,10 @@ import (
 	"net"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
 	"github.com/AdguardTeam/urlfilter/rules"
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
 )
 
 func TestGenAnswerHTTPS_andSVCB(t *testing.T) {

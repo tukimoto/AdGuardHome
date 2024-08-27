@@ -11,15 +11,15 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
-	"github.com/AdguardTeam/AdGuardHome/internal/updater"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/AdguardTeam/golibs/netutil/httputil"
 	"github.com/NYTimes/gziphandler"
 	"github.com/quic-go/quic-go/http3"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
+	"github.com/tukimoto/AdGuardHome/internal/updater"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 )

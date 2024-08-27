@@ -21,11 +21,6 @@ import (
 	"testing/fstest"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghtest"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/hashprefix"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/safesearch"
 	"github.com/AdguardTeam/dnsproxy/proxy"
 	"github.com/AdguardTeam/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/logutil/slogutil"
@@ -35,6 +30,11 @@ import (
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
+	"github.com/tukimoto/AdGuardHome/internal/aghtest"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/hashprefix"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/safesearch"
 )
 
 func TestMain(m *testing.M) {

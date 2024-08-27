@@ -10,12 +10,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
-	"github.com/AdguardTeam/AdGuardHome/internal/version"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/kardianos/service"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
+	"github.com/tukimoto/AdGuardHome/internal/version"
 )
 
 // TODO(a.garipov): Consider moving the shell templates into actual files and
@@ -596,7 +596,7 @@ exit 0
 `
 
 // OpenWrt procd init script
-// https://github.com/AdguardTeam/AdGuardHome/internal/issues/1386
+// https://github.com/tukimoto/AdGuardHome/internal/issues/1386
 const openWrtScript = `#!/bin/sh /etc/rc.common
 
 USE_PROCD=1

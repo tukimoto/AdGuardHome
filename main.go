@@ -6,14 +6,14 @@ import (
 	"embed"
 	// Embed tzdata in binary.
 	//
-	// See https://github.com/AdguardTeam/AdGuardHome/issues/6758
+	// See https://github.com/tukimoto/AdGuardHome/issues/6758
 	_ "time/tzdata"
 
 	"log"
 	"net/http"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/home"
 	"github.com/tukimoto/AdGuardHome/internal/handlers"
+	"github.com/tukimoto/AdGuardHome/internal/home"
 )
 
 // Embed the prebuilt client here since we strive to keep .go files inside the

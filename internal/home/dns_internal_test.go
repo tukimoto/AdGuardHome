@@ -4,11 +4,11 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/client"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
-	"github.com/AdguardTeam/AdGuardHome/internal/schedule"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/client"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
+	"github.com/tukimoto/AdGuardHome/internal/schedule"
 )
 
 var testIPv4 = netip.AddrFrom4([4]byte{1, 2, 3, 4})

@@ -11,12 +11,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghalg"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
-	"github.com/AdguardTeam/AdGuardHome/internal/updater"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/aghalg"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
+	"github.com/tukimoto/AdGuardHome/internal/updater"
 )
 
 // temporaryError is the interface for temporary errors from the Go standard
@@ -83,7 +83,7 @@ func (web *webAPI) requestVersionInfo(resp *versionResponse, recheck bool) (err 
 				// Temporary network error.  This case may happen while we're
 				// restarting our DNS server.  Log and sleep for some time.
 				//
-				// See https://github.com/AdguardTeam/AdGuardHome/issues/934.
+				// See https://github.com/tukimoto/AdGuardHome/issues/934.
 				d := time.Duration(i) * time.Second
 				log.Info("update: temp net error: %q; sleeping for %s and retrying", err, d)
 				time.Sleep(d)
@@ -116,7 +116,7 @@ func (web *webAPI) handleUpdate(w http.ResponseWriter, r *http.Request) {
 	// Retain the current absolute path of the executable, since the updater is
 	// likely to change the position current one to the backup directory.
 	//
-	// See https://github.com/AdguardTeam/AdGuardHome/issues/4735.
+	// See https://github.com/tukimoto/AdGuardHome/issues/4735.
 	execPath, err := os.Executable()
 	if err != nil {
 		aghhttp.Error(r, w, http.StatusInternalServerError, "getting path: %s", err)

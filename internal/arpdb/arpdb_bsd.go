@@ -24,7 +24,7 @@ func newARPDB() (arp *cmdARPDB) {
 		// default ARP attempts to resolve the hostnames via DNS.  See man 8
 		// arp.
 		//
-		// See also https://github.com/AdguardTeam/AdGuardHome/issues/3157.
+		// See also https://github.com/tukimoto/AdGuardHome/issues/3157.
 		args: []string{"-a", "-n"},
 	}
 }

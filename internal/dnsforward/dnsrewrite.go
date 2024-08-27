@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/netip"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
 	"github.com/AdguardTeam/dnsproxy/proxy"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/urlfilter/rules"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
 )
 
 // filterDNSRewriteResponse handles a single DNS rewrite response entry.  It

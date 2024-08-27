@@ -9,8 +9,8 @@ import (
 	"io"
 	"regexp"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/AdguardTeam/golibs/errors"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 // hardwarePortInfo contains information about the current state of the internet

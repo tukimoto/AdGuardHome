@@ -66,7 +66,7 @@ class Login extends Component<LoginProps, LoginState> {
                                 <Trans
                                     components={[
                                         <a
-                                            href="https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration#password-reset"
+                                            href="https://github.com/tukimoto/AdGuardHome/wiki/Configuration#password-reset"
                                             key="0"
                                             target="_blank"
                                             rel="noopener noreferrer">

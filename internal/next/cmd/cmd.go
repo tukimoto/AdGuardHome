@@ -10,9 +10,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/next/configmgr"
-	"github.com/AdguardTeam/AdGuardHome/internal/version"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/next/configmgr"
+	"github.com/tukimoto/AdGuardHome/internal/version"
 )
 
 // Main is the entry point of AdGuard Home.

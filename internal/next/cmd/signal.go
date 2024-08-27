@@ -4,12 +4,12 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/agh"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/configmgr"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/osutil"
 	"github.com/google/renameio/v2/maybe"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
+	"github.com/tukimoto/AdGuardHome/internal/next/agh"
+	"github.com/tukimoto/AdGuardHome/internal/next/configmgr"
 )
 
 // signalHandler processes incoming signals and shuts services down.

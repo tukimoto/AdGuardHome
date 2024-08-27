@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/AdguardTeam/urlfilter"
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 func TestEngine_Refresh(t *testing.T) {

@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/configmigrate"
-	"github.com/AdguardTeam/AdGuardHome/internal/version"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/stringutil"
+	"github.com/tukimoto/AdGuardHome/internal/configmigrate"
+	"github.com/tukimoto/AdGuardHome/internal/version"
 )
 
 // TODO(a.garipov): Replace with package flag.

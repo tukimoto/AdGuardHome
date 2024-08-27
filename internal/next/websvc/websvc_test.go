@@ -12,13 +12,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/next/agh"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/dnssvc"
-	"github.com/AdguardTeam/AdGuardHome/internal/next/websvc"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/AdguardTeam/golibs/testutil/fakefs"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/next/agh"
+	"github.com/tukimoto/AdGuardHome/internal/next/dnssvc"
+	"github.com/tukimoto/AdGuardHome/internal/next/websvc"
 )
 
 func TestMain(m *testing.M) {

@@ -18,13 +18,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghalg"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghhttp"
-	"github.com/AdguardTeam/AdGuardHome/internal/aghtls"
-	"github.com/AdguardTeam/AdGuardHome/internal/dnsforward"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/google/go-cmp/cmp"
+	"github.com/tukimoto/AdGuardHome/internal/aghalg"
+	"github.com/tukimoto/AdGuardHome/internal/aghhttp"
+	"github.com/tukimoto/AdGuardHome/internal/aghtls"
+	"github.com/tukimoto/AdGuardHome/internal/dnsforward"
 )
 
 // tlsManager contains the current configuration and state of AdGuard Home TLS

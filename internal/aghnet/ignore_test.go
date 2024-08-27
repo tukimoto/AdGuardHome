@@ -3,8 +3,8 @@ package aghnet_test
 import (
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
 )
 
 func TestIgnoreEngine_Has(t *testing.T) {

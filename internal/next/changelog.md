@@ -35,8 +35,8 @@ enough.
 - `--host` and `-p/--port` flags.  Use `--web-addr=host:port` to set an address
   on which to serve the Web UI.  `-h` is now an alias for `--help`, see above.
 
-[#2598]: https://github.com/AdguardTeam/AdGuardHome/issues/2598
-[#2893]: https://github.com/AdguardTeam/AdGuardHome/issues/2893
-[#2902]: https://github.com/AdguardTeam/AdGuardHome/issues/2902
-[#4067]: https://github.com/AdguardTeam/AdGuardHome/issues/4067
-[#5676]: https://github.com/AdguardTeam/AdGuardHome/issues/5676
+[#2598]: https://github.com/tukimoto/AdGuardHome/issues/2598
+[#2893]: https://github.com/tukimoto/AdGuardHome/issues/2893
+[#2902]: https://github.com/tukimoto/AdGuardHome/issues/2902
+[#4067]: https://github.com/tukimoto/AdGuardHome/issues/4067
+[#5676]: https://github.com/tukimoto/AdGuardHome/issues/5676

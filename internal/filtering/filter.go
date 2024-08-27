@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghrenameio"
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering/rulelist"
 	"github.com/AdguardTeam/golibs/container"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/aghrenameio"
+	"github.com/tukimoto/AdGuardHome/internal/filtering/rulelist"
 )
 
 // filterDir is the subdirectory of a data directory to store downloaded
@@ -451,7 +451,7 @@ func (d *DNSFilter) updateIntl(flt *FilterYAML) (ok bool, err error) {
 	// Change the default 0o600 permission to something more acceptable by end
 	// users.
 	//
-	// See https://github.com/AdguardTeam/AdGuardHome/issues/3198.
+	// See https://github.com/tukimoto/AdGuardHome/issues/3198.
 	tmpFile, err := aghrenameio.NewPendingFile(flt.Path(d.conf.DataDir), 0o644)
 	if err != nil {
 		return false, err

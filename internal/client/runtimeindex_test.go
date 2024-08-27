@@ -4,8 +4,8 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/client"
 	"github.com/stretchr/testify/assert"
+	"github.com/tukimoto/AdGuardHome/internal/client"
 )
 
 func TestRuntimeIndex(t *testing.T) {

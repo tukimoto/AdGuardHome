@@ -8,10 +8,10 @@ import (
 	"path"
 	"sync/atomic"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghos"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/hostsfile"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/aghos"
 )
 
 // hostsContainerPrefix is a prefix for logging and wrapping errors in

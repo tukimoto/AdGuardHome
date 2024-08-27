@@ -778,7 +778,7 @@ format:
 
 As well as other documentation fixes.
 
-[Identifying clients]: https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#idclient
+[Identifying clients]: https://github.com/tukimoto/AdGuardHome/wiki/Clients#idclient
 
 ## v0.103: API changes
 

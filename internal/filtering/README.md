@@ -3,7 +3,7 @@
 Example use:
 ```bash
 [ -z "$GOPATH" ] && export GOPATH=$HOME/go
-go get -d github.com/AdguardTeam/AdGuardHome/filtering
+go get -d github.com/tukimoto/AdGuardHome/filtering
 ```
 
 Create file filter.go
@@ -11,7 +11,7 @@ Create file filter.go
 package main
 
 import (
-    "github.com/AdguardTeam/AdGuardHome/filtering"
+    "github.com/tukimoto/AdGuardHome/filtering"
     "log"
 )
 
@@ -48,7 +48,7 @@ You can also enable checking against AdGuard's SafeBrowsing:
 package main
 
 import (
-    "github.com/AdguardTeam/AdGuardHome/filtering"
+    "github.com/tukimoto/AdGuardHome/filtering"
     "log"
 )
 

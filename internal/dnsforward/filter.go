@@ -6,10 +6,10 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/urlfilter/rules"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
 )
 
 // clientRequestFilteringSettings looks up client filtering settings using the

@@ -143,7 +143,7 @@ func (l *queryLog) periodicRotate() {
 	// rotating log files.  It's smaller of any available rotation interval to
 	// increase time accuracy.
 	//
-	// See https://github.com/AdguardTeam/AdGuardHome/issues/3823.
+	// See https://github.com/tukimoto/AdGuardHome/issues/3823.
 	const rotationCheckIvl = 1 * time.Hour
 
 	rotations := time.NewTicker(rotationCheckIvl)

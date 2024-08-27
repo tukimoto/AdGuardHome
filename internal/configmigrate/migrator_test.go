@@ -6,9 +6,9 @@ import (
 	"path"
 	"testing"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/configmigrate"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/configmigrate"
 	"golang.org/x/crypto/bcrypt"
 	yaml "gopkg.in/yaml.v3"
 )

@@ -22,7 +22,7 @@ TODO(a.garipov): Use the common markdown formatting tools.
 
 See also the [v0.107.53 GitHub milestone][ms-v0.107.53].
 
-[ms-v0.107.53]: https://github.com/AdguardTeam/AdGuardHome/milestone/88?closed=1
+[ms-v0.107.53]: https://github.com/tukimoto/AdGuardHome/milestone/88?closed=1
 
 NOTE: Add new changes BELOW THIS COMMENT.
 -->
@@ -44,10 +44,10 @@ NOTE: Add new changes BELOW THIS COMMENT.
 - Enforce Bing safe search from Edge sidebar ([#7154]).
 - Text overflow on the query log page ([#7119]).
 
-[#5009]: https://github.com/AdguardTeam/AdGuardHome/issues/5009
-[#7119]: https://github.com/AdguardTeam/AdGuardHome/issues/7119
-[#7154]: https://github.com/AdguardTeam/AdGuardHome/pull/7154
-[#7155]: https://github.com/AdguardTeam/AdGuardHome/pull/7155
+[#5009]: https://github.com/tukimoto/AdGuardHome/issues/5009
+[#7119]: https://github.com/tukimoto/AdGuardHome/issues/7119
+[#7154]: https://github.com/tukimoto/AdGuardHome/pull/7154
+[#7155]: https://github.com/tukimoto/AdGuardHome/pull/7155
 
 [go-1.22.6]: https://groups.google.com/g/golang-announce/c/X4q_-Wf-5g4
 
@@ -100,15 +100,15 @@ See also the [v0.107.52 GitHub milestone][ms-v0.107.52].
 - Tracking `/etc/hosts` file changes causing panics within particular
   filesystems on start ([#7076]).
 
-[#7053]: https://github.com/AdguardTeam/AdGuardHome/issues/7053
-[#7069]: https://github.com/AdguardTeam/AdGuardHome/issues/7069
-[#7076]: https://github.com/AdguardTeam/AdGuardHome/issues/7076
-[#7079]: https://github.com/AdguardTeam/AdGuardHome/issues/7079
+[#7053]: https://github.com/tukimoto/AdGuardHome/issues/7053
+[#7069]: https://github.com/tukimoto/AdGuardHome/issues/7069
+[#7076]: https://github.com/tukimoto/AdGuardHome/issues/7076
+[#7079]: https://github.com/tukimoto/AdGuardHome/issues/7079
 
 [go-1.22.5]:      https://groups.google.com/g/golang-announce/c/gyb7aM1C9H4
-[install-script]: https://github.com/AdguardTeam/AdGuardHome/?tab=readme-ov-file#automated-install-linux-and-mac
+[install-script]: https://github.com/tukimoto/AdGuardHome/?tab=readme-ov-file#automated-install-linux-and-mac
 
-[ms-v0.107.52]: https://github.com/AdguardTeam/AdGuardHome/milestone/87?closed=1
+[ms-v0.107.52]: https://github.com/tukimoto/AdGuardHome/milestone/87?closed=1
 
 
 
@@ -127,10 +127,10 @@ See also the [v0.107.51 GitHub milestone][ms-v0.107.51].
   to match the one used by AdGuard Home's HTTP client to fetch filtering-list
   data ([#7041]).
 
-[#7041]: https://github.com/AdguardTeam/AdGuardHome/issues/7041
+[#7041]: https://github.com/tukimoto/AdGuardHome/issues/7041
 
 [go-1.22.4]:    https://groups.google.com/g/golang-announce/c/XbxouI9gY7k/
-[ms-v0.107.51]: https://github.com/AdguardTeam/AdGuardHome/milestone/86?closed=1
+[ms-v0.107.51]: https://github.com/tukimoto/AdGuardHome/milestone/86?closed=1
 
 
 
@@ -143,9 +143,9 @@ See also the [v0.107.50 GitHub milestone][ms-v0.107.50].
 - Broken private reverse DNS upstream servers validation causing update failures
   ([#7013]).
 
-[#7013]: https://github.com/AdguardTeam/AdGuardHome/issues/7013
+[#7013]: https://github.com/tukimoto/AdGuardHome/issues/7013
 
-[ms-v0.107.50]: https://github.com/AdguardTeam/AdGuardHome/milestone/85?closed=1
+[ms-v0.107.50]: https://github.com/tukimoto/AdGuardHome/milestone/85?closed=1
 
 
 
@@ -195,18 +195,18 @@ See also the [v0.107.49 GitHub milestone][ms-v0.107.49].
 - Unspecified IP addresses aren't checked when using "Fastest IP address" mode
   ([#6875]).
 
-[#5345]: https://github.com/AdguardTeam/AdGuardHome/issues/5345
-[#5812]: https://github.com/AdguardTeam/AdGuardHome/issues/5812
-[#6192]: https://github.com/AdguardTeam/AdGuardHome/issues/6192
-[#6312]: https://github.com/AdguardTeam/AdGuardHome/issues/6312
-[#6422]: https://github.com/AdguardTeam/AdGuardHome/issues/6422
-[#6744]: https://github.com/AdguardTeam/AdGuardHome/issues/6744
-[#6854]: https://github.com/AdguardTeam/AdGuardHome/issues/6854
-[#6875]: https://github.com/AdguardTeam/AdGuardHome/issues/6875
-[#6882]: https://github.com/AdguardTeam/AdGuardHome/issues/6882
+[#5345]: https://github.com/tukimoto/AdGuardHome/issues/5345
+[#5812]: https://github.com/tukimoto/AdGuardHome/issues/5812
+[#6192]: https://github.com/tukimoto/AdGuardHome/issues/6192
+[#6312]: https://github.com/tukimoto/AdGuardHome/issues/6312
+[#6422]: https://github.com/tukimoto/AdGuardHome/issues/6422
+[#6744]: https://github.com/tukimoto/AdGuardHome/issues/6744
+[#6854]: https://github.com/tukimoto/AdGuardHome/issues/6854
+[#6875]: https://github.com/tukimoto/AdGuardHome/issues/6875
+[#6882]: https://github.com/tukimoto/AdGuardHome/issues/6882
 
 [go-1.22.3]:    https://groups.google.com/g/golang-announce/c/wkkO4P9stm0
-[ms-v0.107.49]: https://github.com/AdguardTeam/AdGuardHome/milestone/84?closed=1
+[ms-v0.107.49]: https://github.com/tukimoto/AdGuardHome/milestone/84?closed=1
 
 
 
@@ -218,9 +218,9 @@ See also the [v0.107.48 GitHub milestone][ms-v0.107.48].
 
 - Access settings not being applied to encrypted protocols ([#6890]).
 
-[#6890]: https://github.com/AdguardTeam/AdGuardHome/issues/6890
+[#6890]: https://github.com/tukimoto/AdGuardHome/issues/6890
 
-[ms-v0.107.48]: https://github.com/AdguardTeam/AdGuardHome/milestone/83?closed=1
+[ms-v0.107.48]: https://github.com/tukimoto/AdGuardHome/milestone/83?closed=1
 
 
 
@@ -257,13 +257,13 @@ See also the [v0.107.47 GitHub milestone][ms-v0.107.47].
 
 - Go 1.21 support.
 
-[#5829]: https://github.com/AdguardTeam/AdGuardHome/issues/5829
-[#6717]: https://github.com/AdguardTeam/AdGuardHome/issues/6717
-[#6758]: https://github.com/AdguardTeam/AdGuardHome/issues/6758
-[#6851]: https://github.com/AdguardTeam/AdGuardHome/issues/6851
+[#5829]: https://github.com/tukimoto/AdGuardHome/issues/5829
+[#6717]: https://github.com/tukimoto/AdGuardHome/issues/6717
+[#6758]: https://github.com/tukimoto/AdGuardHome/issues/6758
+[#6851]: https://github.com/tukimoto/AdGuardHome/issues/6851
 
 [go-1.22.2]:    https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M/
-[ms-v0.107.47]: https://github.com/AdguardTeam/AdGuardHome/milestone/82?closed=1
+[ms-v0.107.47]: https://github.com/tukimoto/AdGuardHome/milestone/82?closed=1
 
 
 
@@ -293,14 +293,14 @@ See also the [v0.107.46 GitHub milestone][ms-v0.107.46].
 - Missing "served from cache" label on long DNS server strings ([#6740]).
 - Incorrect tracking of the system hosts file's changes ([#6711]).
 
-[#5992]: https://github.com/AdguardTeam/AdGuardHome/issues/5992
-[#6610]: https://github.com/AdguardTeam/AdGuardHome/issues/6610
-[#6711]: https://github.com/AdguardTeam/AdGuardHome/issues/6711
-[#6712]: https://github.com/AdguardTeam/AdGuardHome/issues/6712
-[#6740]: https://github.com/AdguardTeam/AdGuardHome/issues/6740
-[#6820]: https://github.com/AdguardTeam/AdGuardHome/issues/6820
+[#5992]: https://github.com/tukimoto/AdGuardHome/issues/5992
+[#6610]: https://github.com/tukimoto/AdGuardHome/issues/6610
+[#6711]: https://github.com/tukimoto/AdGuardHome/issues/6711
+[#6712]: https://github.com/tukimoto/AdGuardHome/issues/6712
+[#6740]: https://github.com/tukimoto/AdGuardHome/issues/6740
+[#6820]: https://github.com/tukimoto/AdGuardHome/issues/6820
 
-[ms-v0.107.46]: https://github.com/AdguardTeam/AdGuardHome/milestone/81?closed=1
+[ms-v0.107.46]: https://github.com/tukimoto/AdGuardHome/milestone/81?closed=1
 
 
 
@@ -351,13 +351,13 @@ See also the [v0.107.45 GitHub milestone][ms-v0.107.45].
 
 - Go 1.20 support, as it has reached end of life.
 
-[#6634]: https://github.com/AdguardTeam/AdGuardHome/issues/6634
-[#6679]: https://github.com/AdguardTeam/AdGuardHome/issues/6679
-[#6723]: https://github.com/AdguardTeam/AdGuardHome/issues/6723
+[#6634]: https://github.com/tukimoto/AdGuardHome/issues/6634
+[#6679]: https://github.com/tukimoto/AdGuardHome/issues/6679
+[#6723]: https://github.com/tukimoto/AdGuardHome/issues/6723
 
 [go-1.21.8]:    https://groups.google.com/g/golang-announce/c/5pwGVUPoMbg
 [go-toolchain]: https://go.dev/blog/toolchain
-[ms-v0.107.45]: https://github.com/AdguardTeam/AdGuardHome/milestone/80?closed=1
+[ms-v0.107.45]: https://github.com/tukimoto/AdGuardHome/milestone/80?closed=1
 
 
 
@@ -429,21 +429,21 @@ In this release, the schema version has changed from 27 to 28.
 - Omitted CNAME records in safe search results, which can cause YouTube to not
   work on iOS ([#6352]).
 
-[#6321]: https://github.com/AdguardTeam/AdGuardHome/issues/6321
-[#6352]: https://github.com/AdguardTeam/AdGuardHome/issues/6352
-[#6409]: https://github.com/AdguardTeam/AdGuardHome/issues/6409
-[#6480]: https://github.com/AdguardTeam/AdGuardHome/issues/6480
-[#6534]: https://github.com/AdguardTeam/AdGuardHome/issues/6534
-[#6541]: https://github.com/AdguardTeam/AdGuardHome/issues/6541
-[#6545]: https://github.com/AdguardTeam/AdGuardHome/issues/6545
-[#6568]: https://github.com/AdguardTeam/AdGuardHome/issues/6568
-[#6570]: https://github.com/AdguardTeam/AdGuardHome/issues/6570
-[#6574]: https://github.com/AdguardTeam/AdGuardHome/issues/6574
-[#6584]: https://github.com/AdguardTeam/AdGuardHome/issues/6584
-[#6644]: https://github.com/AdguardTeam/AdGuardHome/issues/6644
+[#6321]: https://github.com/tukimoto/AdGuardHome/issues/6321
+[#6352]: https://github.com/tukimoto/AdGuardHome/issues/6352
+[#6409]: https://github.com/tukimoto/AdGuardHome/issues/6409
+[#6480]: https://github.com/tukimoto/AdGuardHome/issues/6480
+[#6534]: https://github.com/tukimoto/AdGuardHome/issues/6534
+[#6541]: https://github.com/tukimoto/AdGuardHome/issues/6541
+[#6545]: https://github.com/tukimoto/AdGuardHome/issues/6545
+[#6568]: https://github.com/tukimoto/AdGuardHome/issues/6568
+[#6570]: https://github.com/tukimoto/AdGuardHome/issues/6570
+[#6574]: https://github.com/tukimoto/AdGuardHome/issues/6574
+[#6584]: https://github.com/tukimoto/AdGuardHome/issues/6584
+[#6644]: https://github.com/tukimoto/AdGuardHome/issues/6644
 
-[ms-v0.107.44]: https://github.com/AdguardTeam/AdGuardHome/milestone/79?closed=1
-[wiki-config]:  https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration
+[ms-v0.107.44]: https://github.com/tukimoto/AdGuardHome/milestone/79?closed=1
+[wiki-config]:  https://github.com/tukimoto/AdGuardHome/wiki/Configuration
 
 
 
@@ -456,9 +456,9 @@ See also the [v0.107.43 GitHub milestone][ms-v0.107.43].
 - Incorrect handling of IPv4-in-IPv6 addresses when binding to an unspecified
   address on some machines ([#6510]).
 
-[#6510]: https://github.com/AdguardTeam/AdGuardHome/issues/6510
+[#6510]: https://github.com/tukimoto/AdGuardHome/issues/6510
 
-[ms-v0.107.43]: https://github.com/AdguardTeam/AdGuardHome/milestone/78?closed=1
+[ms-v0.107.43]: https://github.com/tukimoto/AdGuardHome/milestone/78?closed=1
 
 
 
@@ -496,15 +496,15 @@ See also the [v0.107.42 GitHub milestone][ms-v0.107.42].
 - Pre-filling the *New static lease* window with data ([#6402]).
 - Protection pause timer synchronization ([#5759]).
 
-[#1660]: https://github.com/AdguardTeam/AdGuardHome/issues/1660
-[#5759]: https://github.com/AdguardTeam/AdGuardHome/issues/5759
-[#6263]: https://github.com/AdguardTeam/AdGuardHome/issues/6263
-[#6369]: https://github.com/AdguardTeam/AdGuardHome/issues/6369
-[#6402]: https://github.com/AdguardTeam/AdGuardHome/issues/6402
-[#6420]: https://github.com/AdguardTeam/AdGuardHome/issues/6420
+[#1660]: https://github.com/tukimoto/AdGuardHome/issues/1660
+[#5759]: https://github.com/tukimoto/AdGuardHome/issues/5759
+[#6263]: https://github.com/tukimoto/AdGuardHome/issues/6263
+[#6369]: https://github.com/tukimoto/AdGuardHome/issues/6369
+[#6402]: https://github.com/tukimoto/AdGuardHome/issues/6402
+[#6420]: https://github.com/tukimoto/AdGuardHome/issues/6420
 
 [go-1.20.12]:   https://groups.google.com/g/golang-announce/c/iLGK3x6yuNo/m/z6MJ-eB0AQAJ
-[ms-v0.107.42]: https://github.com/AdguardTeam/AdGuardHome/milestone/77?closed=1
+[ms-v0.107.42]: https://github.com/tukimoto/AdGuardHome/milestone/77?closed=1
 
 
 
@@ -546,20 +546,20 @@ See also the [v0.107.41 GitHub milestone][ms-v0.107.41].
 - Dark mode DNS rewrite background ([#6329]).
 - Issues with QUIC and HTTP/3 upstreams on Linux ([#6335]).
 
-[#4977]: https://github.com/AdguardTeam/AdGuardHome/issues/4977
-[#6204]: https://github.com/AdguardTeam/AdGuardHome/issues/6204
-[#6220]: https://github.com/AdguardTeam/AdGuardHome/issues/6220
-[#6329]: https://github.com/AdguardTeam/AdGuardHome/issues/6329
-[#6335]: https://github.com/AdguardTeam/AdGuardHome/issues/6335
-[#6337]: https://github.com/AdguardTeam/AdGuardHome/issues/6337
-[#6338]: https://github.com/AdguardTeam/AdGuardHome/issues/6338
-[#6357]: https://github.com/AdguardTeam/AdGuardHome/issues/6357
-[#6358]: https://github.com/AdguardTeam/AdGuardHome/issues/6358
-[#6368]: https://github.com/AdguardTeam/AdGuardHome/issues/6368
-[#6401]: https://github.com/AdguardTeam/AdGuardHome/issues/6401
+[#4977]: https://github.com/tukimoto/AdGuardHome/issues/4977
+[#6204]: https://github.com/tukimoto/AdGuardHome/issues/6204
+[#6220]: https://github.com/tukimoto/AdGuardHome/issues/6220
+[#6329]: https://github.com/tukimoto/AdGuardHome/issues/6329
+[#6335]: https://github.com/tukimoto/AdGuardHome/issues/6335
+[#6337]: https://github.com/tukimoto/AdGuardHome/issues/6337
+[#6338]: https://github.com/tukimoto/AdGuardHome/issues/6338
+[#6357]: https://github.com/tukimoto/AdGuardHome/issues/6357
+[#6358]: https://github.com/tukimoto/AdGuardHome/issues/6358
+[#6368]: https://github.com/tukimoto/AdGuardHome/issues/6368
+[#6401]: https://github.com/tukimoto/AdGuardHome/issues/6401
 
 [go-1.20.11]:   https://groups.google.com/g/golang-announce/c/4tU8LZfBFkY/m/d-jSKR_jBwAJ
-[ms-v0.107.41]: https://github.com/AdguardTeam/AdGuardHome/milestone/76?closed=1
+[ms-v0.107.41]: https://github.com/tukimoto/AdGuardHome/milestone/76?closed=1
 
 
 
@@ -580,13 +580,13 @@ See also the [v0.107.40 GitHub milestone][ms-v0.107.40].
 - Issues with QUIC and HTTP/3 upstreams on FreeBSD ([#6301]).
 - Panic on clearing the query log ([#6304]).
 
-[#684]:  https://github.com/AdguardTeam/AdGuardHome/issues/684
-[#6180]: https://github.com/AdguardTeam/AdGuardHome/issues/6180
-[#6296]: https://github.com/AdguardTeam/AdGuardHome/issues/6296
-[#6301]: https://github.com/AdguardTeam/AdGuardHome/issues/6301
-[#6304]: https://github.com/AdguardTeam/AdGuardHome/issues/6304
+[#684]:  https://github.com/tukimoto/AdGuardHome/issues/684
+[#6180]: https://github.com/tukimoto/AdGuardHome/issues/6180
+[#6296]: https://github.com/tukimoto/AdGuardHome/issues/6296
+[#6301]: https://github.com/tukimoto/AdGuardHome/issues/6301
+[#6304]: https://github.com/tukimoto/AdGuardHome/issues/6304
 
-[ms-v0.107.40]: https://github.com/AdguardTeam/AdGuardHome/milestone/75?closed=1
+[ms-v0.107.40]: https://github.com/tukimoto/AdGuardHome/milestone/75?closed=1
 
 
 
@@ -619,17 +619,17 @@ See also the [v0.107.39 GitHub milestone][ms-v0.107.39].
   DNS servers ([#6231]).
 - An accidental change in DNS rewrite priority ([#6226]).
 
-[#1700]: https://github.com/AdguardTeam/AdGuardHome/issues/1700
-[#4569]: https://github.com/AdguardTeam/AdGuardHome/issues/4569
-[#6156]: https://github.com/AdguardTeam/AdGuardHome/issues/6156
-[#6226]: https://github.com/AdguardTeam/AdGuardHome/issues/6226
-[#6231]: https://github.com/AdguardTeam/AdGuardHome/issues/6231
-[#6233]: https://github.com/AdguardTeam/AdGuardHome/issues/6233
-[#6280]: https://github.com/AdguardTeam/AdGuardHome/issues/6280
+[#1700]: https://github.com/tukimoto/AdGuardHome/issues/1700
+[#4569]: https://github.com/tukimoto/AdGuardHome/issues/4569
+[#6156]: https://github.com/tukimoto/AdGuardHome/issues/6156
+[#6226]: https://github.com/tukimoto/AdGuardHome/issues/6226
+[#6231]: https://github.com/tukimoto/AdGuardHome/issues/6231
+[#6233]: https://github.com/tukimoto/AdGuardHome/issues/6233
+[#6280]: https://github.com/tukimoto/AdGuardHome/issues/6280
 
 [go-1.20.10]:   https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ
 [go-1.20.9]:    https://groups.google.com/g/golang-announce/c/XBa1oHDevAo/m/desYyx3qAgAJ
-[ms-v0.107.39]: https://github.com/AdguardTeam/AdGuardHome/milestone/74?closed=1
+[ms-v0.107.39]: https://github.com/tukimoto/AdGuardHome/milestone/74?closed=1
 
 
 
@@ -644,11 +644,11 @@ See also the [v0.107.38 GitHub milestone][ms-v0.107.38].
 - Empty or default Safe Browsing and Parental Control settings ([#6181]).
 - Various UI issues.
 
-[#6181]: https://github.com/AdguardTeam/AdGuardHome/issues/6181
-[#6182]: https://github.com/AdguardTeam/AdGuardHome/issues/6182
-[#6183]: https://github.com/AdguardTeam/AdGuardHome/issues/6183
+[#6181]: https://github.com/tukimoto/AdGuardHome/issues/6181
+[#6182]: https://github.com/tukimoto/AdGuardHome/issues/6182
+[#6183]: https://github.com/tukimoto/AdGuardHome/issues/6183
 
-[ms-v0.107.38]: https://github.com/AdguardTeam/AdGuardHome/milestone/73?closed=1
+[ms-v0.107.38]: https://github.com/tukimoto/AdGuardHome/milestone/73?closed=1
 
 
 
@@ -799,23 +799,23 @@ In this release, the schema version has changed from 24 to 27.
 - Panic on shutting down while DNS requests are in process of filtering
   ([#5948]).
 
-[#1453]: https://github.com/AdguardTeam/AdGuardHome/issues/1453
-[#2998]: https://github.com/AdguardTeam/AdGuardHome/issues/2998
-[#3701]: https://github.com/AdguardTeam/AdGuardHome/issues/3701
-[#5720]: https://github.com/AdguardTeam/AdGuardHome/issues/5720
-[#5793]: https://github.com/AdguardTeam/AdGuardHome/issues/5793
-[#5948]: https://github.com/AdguardTeam/AdGuardHome/issues/5948
-[#6020]: https://github.com/AdguardTeam/AdGuardHome/issues/6020
-[#6050]: https://github.com/AdguardTeam/AdGuardHome/issues/6050
-[#6053]: https://github.com/AdguardTeam/AdGuardHome/issues/6053
-[#6093]: https://github.com/AdguardTeam/AdGuardHome/issues/6093
-[#6100]: https://github.com/AdguardTeam/AdGuardHome/issues/6100
-[#6122]: https://github.com/AdguardTeam/AdGuardHome/issues/6122
-[#6133]: https://github.com/AdguardTeam/AdGuardHome/issues/6133
+[#1453]: https://github.com/tukimoto/AdGuardHome/issues/1453
+[#2998]: https://github.com/tukimoto/AdGuardHome/issues/2998
+[#3701]: https://github.com/tukimoto/AdGuardHome/issues/3701
+[#5720]: https://github.com/tukimoto/AdGuardHome/issues/5720
+[#5793]: https://github.com/tukimoto/AdGuardHome/issues/5793
+[#5948]: https://github.com/tukimoto/AdGuardHome/issues/5948
+[#6020]: https://github.com/tukimoto/AdGuardHome/issues/6020
+[#6050]: https://github.com/tukimoto/AdGuardHome/issues/6050
+[#6053]: https://github.com/tukimoto/AdGuardHome/issues/6053
+[#6093]: https://github.com/tukimoto/AdGuardHome/issues/6093
+[#6100]: https://github.com/tukimoto/AdGuardHome/issues/6100
+[#6122]: https://github.com/tukimoto/AdGuardHome/issues/6122
+[#6133]: https://github.com/tukimoto/AdGuardHome/issues/6133
 
 [go-1.20.8]:    https://groups.google.com/g/golang-announce/c/Fm51GRLNRvM/m/F5bwBlXMAQAJ
 [hsts]:         https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
-[ms-v0.107.37]: https://github.com/AdguardTeam/AdGuardHome/milestone/72?closed=1
+[ms-v0.107.37]: https://github.com/tukimoto/AdGuardHome/milestone/72?closed=1
 [rfc6797]:      https://datatracker.ietf.org/doc/html/rfc6797
 
 
@@ -846,11 +846,11 @@ See also the [v0.107.36 GitHub milestone][ms-v0.107.36].
 
 - Go 1.19 support, as it has reached end of life.
 
-[#6046]: https://github.com/AdguardTeam/AdGuardHome/issues/6046
-[#6049]: https://github.com/AdguardTeam/AdGuardHome/issues/6049
+[#6046]: https://github.com/tukimoto/AdGuardHome/issues/6046
+[#6049]: https://github.com/tukimoto/AdGuardHome/issues/6049
 
 [go-1.20.7]:    https://groups.google.com/g/golang-announce/c/X0b6CsSAaYI/m/Efv5DbZ9AwAJ
-[ms-v0.107.36]: https://github.com/AdguardTeam/AdGuardHome/milestone/71?closed=1
+[ms-v0.107.36]: https://github.com/tukimoto/AdGuardHome/milestone/71?closed=1
 
 
 
@@ -875,10 +875,10 @@ See also the [v0.107.35 GitHub milestone][ms-v0.107.35].
 - Default exposure of the non-standard ports 784 and 8853 for DNS-over-QUIC in
   the `Dockerfile`.
 
-[#6003]: https://github.com/AdguardTeam/AdGuardHome/issues/6003
-[#6006]: https://github.com/AdguardTeam/AdGuardHome/issues/6006
+[#6003]: https://github.com/tukimoto/AdGuardHome/issues/6003
+[#6006]: https://github.com/tukimoto/AdGuardHome/issues/6006
 
-[ms-v0.107.35]: https://github.com/AdguardTeam/AdGuardHome/milestone/70?closed=1
+[ms-v0.107.35]: https://github.com/tukimoto/AdGuardHome/milestone/70?closed=1
 
 
 
@@ -955,12 +955,12 @@ In this release, the schema version has changed from 23 to 24.
   be required to backup their configuration, stop the container, purge the old
   image, and reload it from scratch.
 
-[#5896]: https://github.com/AdguardTeam/AdGuardHome/issues/5896
-[#5972]: https://github.com/AdguardTeam/AdGuardHome/issues/5972
-[#5990]: https://github.com/AdguardTeam/AdGuardHome/issues/5990
+[#5896]: https://github.com/tukimoto/AdGuardHome/issues/5896
+[#5972]: https://github.com/tukimoto/AdGuardHome/issues/5972
+[#5990]: https://github.com/tukimoto/AdGuardHome/issues/5990
 
 [go-1.19.11]:   https://groups.google.com/g/golang-announce/c/2q13H6LEEx0/m/sduSepLLBwAJ
-[ms-v0.107.34]: https://github.com/AdguardTeam/AdGuardHome/milestone/69?closed=1
+[ms-v0.107.34]: https://github.com/tukimoto/AdGuardHome/milestone/69?closed=1
 
 
 
@@ -1102,18 +1102,18 @@ In this release, the schema version has changed from 20 to 23.
 - Safe Search not working with `AAAA` queries for domains that don't have `AAAA`
   records ([#5913]).
 
-[#951]:  https://github.com/AdguardTeam/AdGuardHome/issues/951
-[#1577]: https://github.com/AdguardTeam/AdGuardHome/issues/1577
-[#4231]: https://github.com/AdguardTeam/AdGuardHome/issues/4231
-[#4235]: https://github.com/AdguardTeam/AdGuardHome/pull/4235
-[#5285]: https://github.com/AdguardTeam/AdGuardHome/issues/5285
-[#5700]: https://github.com/AdguardTeam/AdGuardHome/issues/5700
-[#5902]: https://github.com/AdguardTeam/AdGuardHome/issues/5902
-[#5910]: https://github.com/AdguardTeam/AdGuardHome/issues/5910
-[#5913]: https://github.com/AdguardTeam/AdGuardHome/issues/5913
-[#5939]: https://github.com/AdguardTeam/AdGuardHome/discussions/5939
+[#951]:  https://github.com/tukimoto/AdGuardHome/issues/951
+[#1577]: https://github.com/tukimoto/AdGuardHome/issues/1577
+[#4231]: https://github.com/tukimoto/AdGuardHome/issues/4231
+[#4235]: https://github.com/tukimoto/AdGuardHome/pull/4235
+[#5285]: https://github.com/tukimoto/AdGuardHome/issues/5285
+[#5700]: https://github.com/tukimoto/AdGuardHome/issues/5700
+[#5902]: https://github.com/tukimoto/AdGuardHome/issues/5902
+[#5910]: https://github.com/tukimoto/AdGuardHome/issues/5910
+[#5913]: https://github.com/tukimoto/AdGuardHome/issues/5913
+[#5939]: https://github.com/tukimoto/AdGuardHome/discussions/5939
 
-[ms-v0.107.33]: https://github.com/AdguardTeam/AdGuardHome/milestone/68?closed=1
+[ms-v0.107.33]: https://github.com/tukimoto/AdGuardHome/milestone/68?closed=1
 
 
 
@@ -1137,11 +1137,11 @@ See also the [v0.107.31 GitHub milestone][ms-v0.107.31].
 - Plain-UDP upstreams always falling back to TCP, causing outages and slowdowns
   ([#5873], [#5874]).
 
-[#5872]: https://github.com/AdguardTeam/AdGuardHome/issues/5872
-[#5873]: https://github.com/AdguardTeam/AdGuardHome/issues/5873
-[#5874]: https://github.com/AdguardTeam/AdGuardHome/issues/5874
+[#5872]: https://github.com/tukimoto/AdGuardHome/issues/5872
+[#5873]: https://github.com/tukimoto/AdGuardHome/issues/5873
+[#5874]: https://github.com/tukimoto/AdGuardHome/issues/5874
 
-[ms-v0.107.31]: https://github.com/AdguardTeam/AdGuardHome/milestone/67?closed=1
+[ms-v0.107.31]: https://github.com/tukimoto/AdGuardHome/milestone/67?closed=1
 
 
 
@@ -1167,10 +1167,10 @@ See also the [v0.107.30 GitHub milestone][ms-v0.107.30].
 - Provided bootstrap servers are now used to resolve the hostnames of plain
   UDP/TCP upstream servers.
 
-[#5716]: https://github.com/AdguardTeam/AdGuardHome/issues/5716
+[#5716]: https://github.com/tukimoto/AdGuardHome/issues/5716
 
 [go-1.19.10]:   https://groups.google.com/g/golang-announce/c/q5135a9d924/m/j0ZoAJOHAwAJ
-[ms-v0.107.30]: https://github.com/AdguardTeam/AdGuardHome/milestone/66?closed=1
+[ms-v0.107.30]: https://github.com/tukimoto/AdGuardHome/milestone/66?closed=1
 
 
 
@@ -1197,12 +1197,12 @@ See also the [v0.107.29 GitHub milestone][ms-v0.107.29].
 - All Safe Search services being unchecked by default.
 - Panic when a DNSCrypt stamp is invalid ([#5721]).
 
-[#5712]: https://github.com/AdguardTeam/AdGuardHome/issues/5712
-[#5721]: https://github.com/AdguardTeam/AdGuardHome/issues/5721
-[#5725]: https://github.com/AdguardTeam/AdGuardHome/issues/5725
-[#5752]: https://github.com/AdguardTeam/AdGuardHome/issues/5752
+[#5712]: https://github.com/tukimoto/AdGuardHome/issues/5712
+[#5721]: https://github.com/tukimoto/AdGuardHome/issues/5721
+[#5725]: https://github.com/tukimoto/AdGuardHome/issues/5725
+[#5752]: https://github.com/tukimoto/AdGuardHome/issues/5752
 
-[ms-v0.107.29]: https://github.com/AdguardTeam/AdGuardHome/milestone/65?closed=1
+[ms-v0.107.29]: https://github.com/tukimoto/AdGuardHome/milestone/65?closed=1
 
 
 
@@ -1324,16 +1324,16 @@ In this release, the schema version has changed from 17 to 20.
 
 - Logging of the client's IP address after failed login attempts ([#5701]).
 
-[#1163]: https://github.com/AdguardTeam/AdGuardHome/issues/1163
-[#1333]: https://github.com/AdguardTeam/AdGuardHome/issues/1333
-[#1472]: https://github.com/AdguardTeam/AdGuardHome/issues/1472
-[#3290]: https://github.com/AdguardTeam/AdGuardHome/issues/3290
-[#3459]: https://github.com/AdguardTeam/AdGuardHome/issues/3459
-[#4262]: https://github.com/AdguardTeam/AdGuardHome/issues/4262
-[#5567]: https://github.com/AdguardTeam/AdGuardHome/issues/5567
-[#5701]: https://github.com/AdguardTeam/AdGuardHome/issues/5701
+[#1163]: https://github.com/tukimoto/AdGuardHome/issues/1163
+[#1333]: https://github.com/tukimoto/AdGuardHome/issues/1333
+[#1472]: https://github.com/tukimoto/AdGuardHome/issues/1472
+[#3290]: https://github.com/tukimoto/AdGuardHome/issues/3290
+[#3459]: https://github.com/tukimoto/AdGuardHome/issues/3459
+[#4262]: https://github.com/tukimoto/AdGuardHome/issues/4262
+[#5567]: https://github.com/tukimoto/AdGuardHome/issues/5567
+[#5701]: https://github.com/tukimoto/AdGuardHome/issues/5701
 
-[ms-v0.107.28]: https://github.com/AdguardTeam/AdGuardHome/milestone/64?closed=1
+[ms-v0.107.28]: https://github.com/tukimoto/AdGuardHome/milestone/64?closed=1
 [rfc6761]:      https://datatracker.ietf.org/doc/html/rfc6761
 
 
@@ -1357,12 +1357,12 @@ See also the [v0.107.27 GitHub milestone][ms-v0.107.27].
 - Panic caused by empty top-level domain name label in `/etc/hosts` files
   ([#5584]).
 
-[#5584]: https://github.com/AdguardTeam/AdGuardHome/issues/5584
-[#5631]: https://github.com/AdguardTeam/AdGuardHome/issues/5631
-[#5639]: https://github.com/AdguardTeam/AdGuardHome/issues/5639
+[#5584]: https://github.com/tukimoto/AdGuardHome/issues/5584
+[#5631]: https://github.com/tukimoto/AdGuardHome/issues/5631
+[#5639]: https://github.com/tukimoto/AdGuardHome/issues/5639
 
 [go-1.19.8]:    https://groups.google.com/g/golang-announce/c/Xdv6JL9ENs8/m/OV40vnafAwAJ
-[ms-v0.107.27]: https://github.com/AdguardTeam/AdGuardHome/milestone/63?closed=1
+[ms-v0.107.27]: https://github.com/tukimoto/AdGuardHome/milestone/63?closed=1
 
 
 
@@ -1422,19 +1422,19 @@ See also the [v0.107.26 GitHub milestone][ms-v0.107.26].
   been relaxed to meet those from [RFC 3696][rfc3696] ([#4884]).
 - Failing service installation via script on FreeBSD ([#5431]).
 
-[#4884]: https://github.com/AdguardTeam/AdGuardHome/issues/4884
-[#5270]: https://github.com/AdguardTeam/AdGuardHome/issues/5270
-[#5281]: https://github.com/AdguardTeam/AdGuardHome/issues/5281
-[#5373]: https://github.com/AdguardTeam/AdGuardHome/issues/5373
-[#5431]: https://github.com/AdguardTeam/AdGuardHome/issues/5431
-[#5439]: https://github.com/AdguardTeam/AdGuardHome/issues/5439
-[#5441]: https://github.com/AdguardTeam/AdGuardHome/issues/5441
-[#5442]: https://github.com/AdguardTeam/AdGuardHome/issues/5442
-[#5468]: https://github.com/AdguardTeam/AdGuardHome/issues/5468
-[#5515]: https://github.com/AdguardTeam/AdGuardHome/issues/5515
+[#4884]: https://github.com/tukimoto/AdGuardHome/issues/4884
+[#5270]: https://github.com/tukimoto/AdGuardHome/issues/5270
+[#5281]: https://github.com/tukimoto/AdGuardHome/issues/5281
+[#5373]: https://github.com/tukimoto/AdGuardHome/issues/5373
+[#5431]: https://github.com/tukimoto/AdGuardHome/issues/5431
+[#5439]: https://github.com/tukimoto/AdGuardHome/issues/5439
+[#5441]: https://github.com/tukimoto/AdGuardHome/issues/5441
+[#5442]: https://github.com/tukimoto/AdGuardHome/issues/5442
+[#5468]: https://github.com/tukimoto/AdGuardHome/issues/5468
+[#5515]: https://github.com/tukimoto/AdGuardHome/issues/5515
 
 [go-1.19.7]:    https://groups.google.com/g/golang-announce/c/3-TpUx48iQY
-[ms-v0.107.26]: https://github.com/AdguardTeam/AdGuardHome/milestone/62?closed=1
+[ms-v0.107.26]: https://github.com/tukimoto/AdGuardHome/milestone/62?closed=1
 [rfc3696]:      https://datatracker.ietf.org/doc/html/rfc3696
 
 
@@ -1447,9 +1447,9 @@ See also the [v0.107.25 GitHub milestone][ms-v0.107.25].
 
 - Panic when using unencrypted DNS-over-HTTPS ([#5518]).
 
-[#5518]: https://github.com/AdguardTeam/AdGuardHome/issues/5518
+[#5518]: https://github.com/tukimoto/AdGuardHome/issues/5518
 
-[ms-v0.107.25]: https://github.com/AdguardTeam/AdGuardHome/milestone/61?closed=1
+[ms-v0.107.25]: https://github.com/tukimoto/AdGuardHome/milestone/61?closed=1
 
 
 
@@ -1535,14 +1535,14 @@ In this release, the schema version has changed from 14 to 16.
 
 - Go 1.18 support, as it has reached end of life.
 
-[#1717]: https://github.com/AdguardTeam/AdGuardHome/issues/1717
-[#4299]: https://github.com/AdguardTeam/AdGuardHome/issues/4299
-[#4939]: https://github.com/AdguardTeam/AdGuardHome/issues/4939
-[#5433]: https://github.com/AdguardTeam/AdGuardHome/issues/5433
-[#5479]: https://github.com/AdguardTeam/AdGuardHome/issues/5479
+[#1717]: https://github.com/tukimoto/AdGuardHome/issues/1717
+[#4299]: https://github.com/tukimoto/AdGuardHome/issues/4299
+[#4939]: https://github.com/tukimoto/AdGuardHome/issues/4939
+[#5433]: https://github.com/tukimoto/AdGuardHome/issues/5433
+[#5479]: https://github.com/tukimoto/AdGuardHome/issues/5479
 
 [go-1.19.6]:    https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E
-[ms-v0.107.24]: https://github.com/AdguardTeam/AdGuardHome/milestone/60?closed=1
+[ms-v0.107.24]: https://github.com/tukimoto/AdGuardHome/milestone/60?closed=1
 
 
 
@@ -1571,11 +1571,11 @@ See also the [v0.107.23 GitHub milestone][ms-v0.107.23].
   Correspondingly, the configuration parameter `beta_bind_port` has been removed
   as well.
 
-[#5117]: https://github.com/AdguardTeam/AdGuardHome/issues/5117
-[#5245]: https://github.com/AdguardTeam/AdGuardHome/issues/5245
-[#5375]: https://github.com/AdguardTeam/AdGuardHome/issues/5375
+[#5117]: https://github.com/tukimoto/AdGuardHome/issues/5117
+[#5245]: https://github.com/tukimoto/AdGuardHome/issues/5245
+[#5375]: https://github.com/tukimoto/AdGuardHome/issues/5375
 
-[ms-v0.107.23]: https://github.com/AdguardTeam/AdGuardHome/milestone/59?closed=1
+[ms-v0.107.23]: https://github.com/tukimoto/AdGuardHome/milestone/59?closed=1
 
 
 
@@ -1606,12 +1606,12 @@ See also the [v0.107.22 GitHub milestone][ms-v0.107.22].
 - Filters updating strategy, which could sometimes lead to use of broken or
   incompletely downloaded lists ([#5258]).
 
-[#613]:  https://github.com/AdguardTeam/AdGuardHome/issues/613
-[#5191]: https://github.com/AdguardTeam/AdGuardHome/issues/5191
-[#5290]: https://github.com/AdguardTeam/AdGuardHome/issues/5290
-[#5258]: https://github.com/AdguardTeam/AdGuardHome/issues/5258
+[#613]:  https://github.com/tukimoto/AdGuardHome/issues/613
+[#5191]: https://github.com/tukimoto/AdGuardHome/issues/5191
+[#5290]: https://github.com/tukimoto/AdGuardHome/issues/5290
+[#5258]: https://github.com/tukimoto/AdGuardHome/issues/5258
 
-[ms-v0.107.22]: https://github.com/AdguardTeam/AdGuardHome/milestone/58?closed=1
+[ms-v0.107.22]: https://github.com/tukimoto/AdGuardHome/milestone/58?closed=1
 
 
 
@@ -1633,10 +1633,10 @@ See also the [v0.107.21 GitHub milestone][ms-v0.107.21].
 - Errors popping up during updates of settings, which could sometimes cause the
   server to stop responding ([#5251]).
 
-[#5238]: https://github.com/AdguardTeam/AdGuardHome/issues/5238
-[#5251]: https://github.com/AdguardTeam/AdGuardHome/issues/5251
+[#5238]: https://github.com/tukimoto/AdGuardHome/issues/5238
+[#5251]: https://github.com/tukimoto/AdGuardHome/issues/5251
 
-[ms-v0.107.21]: https://github.com/AdguardTeam/AdGuardHome/milestone/57?closed=1
+[ms-v0.107.21]: https://github.com/tukimoto/AdGuardHome/milestone/57?closed=1
 
 
 
@@ -1668,14 +1668,14 @@ See also the [v0.107.20 GitHub milestone][ms-v0.107.20].
   encryption settings page in the UI, which was the intended previous behavior.
 - URLs of some vetted blocklists.
 
-[#4944]: https://github.com/AdguardTeam/AdGuardHome/issues/4944
-[#5189]: https://github.com/AdguardTeam/AdGuardHome/issues/5189
-[#5190]: https://github.com/AdguardTeam/AdGuardHome/issues/5190
-[#5193]: https://github.com/AdguardTeam/AdGuardHome/issues/5193
-[#5208]: https://github.com/AdguardTeam/AdGuardHome/issues/5208
+[#4944]: https://github.com/tukimoto/AdGuardHome/issues/4944
+[#5189]: https://github.com/tukimoto/AdGuardHome/issues/5189
+[#5190]: https://github.com/tukimoto/AdGuardHome/issues/5190
+[#5193]: https://github.com/tukimoto/AdGuardHome/issues/5193
+[#5208]: https://github.com/tukimoto/AdGuardHome/issues/5208
 
 [go-1.18.9]:    https://groups.google.com/g/golang-announce/c/L_3rmdT0BMU
-[ms-v0.107.20]: https://github.com/AdguardTeam/AdGuardHome/milestone/56?closed=1
+[ms-v0.107.20]: https://github.com/tukimoto/AdGuardHome/milestone/56?closed=1
 
 
 
@@ -1694,9 +1694,9 @@ See also the [v0.107.19 GitHub milestone][ms-v0.107.19].
 
 - Minor UI changes.
 
-[#4223]: https://github.com/AdguardTeam/AdGuardHome/issues/4223
+[#4223]: https://github.com/tukimoto/AdGuardHome/issues/4223
 
-[ms-v0.107.19]: https://github.com/AdguardTeam/AdGuardHome/milestone/55?closed=1
+[ms-v0.107.19]: https://github.com/tukimoto/AdGuardHome/milestone/55?closed=1
 
 [AdguardTeam/HostlistsRegistry#100]: https://github.com/AdguardTeam/HostlistsRegistry/pull/100
 
@@ -1711,9 +1711,9 @@ See also the [v0.107.18 GitHub milestone][ms-v0.107.18].
 - Crash on some systems when domains from system hosts files are processed
   ([#5089]).
 
-[#5089]: https://github.com/AdguardTeam/AdGuardHome/issues/5089
+[#5089]: https://github.com/tukimoto/AdGuardHome/issues/5089
 
-[ms-v0.107.18]: https://github.com/AdguardTeam/AdGuardHome/milestone/54?closed=1
+[ms-v0.107.18]: https://github.com/tukimoto/AdGuardHome/milestone/54?closed=1
 
 
 
@@ -1763,21 +1763,21 @@ See also the [v0.107.17 GitHub milestone][ms-v0.107.17].
   cached now ([#4942]).
 - Web UI not switching to HTTP/3 ([#4986], [#4993]).
 
-[#2926]: https://github.com/AdguardTeam/AdGuardHome/issues/2926
-[#3418]: https://github.com/AdguardTeam/AdGuardHome/issues/3418
-[#3972]: https://github.com/AdguardTeam/AdGuardHome/issues/3972
-[#4898]: https://github.com/AdguardTeam/AdGuardHome/issues/4898
-[#4916]: https://github.com/AdguardTeam/AdGuardHome/issues/4916
-[#4925]: https://github.com/AdguardTeam/AdGuardHome/issues/4925
-[#4942]: https://github.com/AdguardTeam/AdGuardHome/issues/4942
-[#4986]: https://github.com/AdguardTeam/AdGuardHome/issues/4986
-[#4990]: https://github.com/AdguardTeam/AdGuardHome/issues/4990
-[#4993]: https://github.com/AdguardTeam/AdGuardHome/issues/4993
-[#5010]: https://github.com/AdguardTeam/AdGuardHome/issues/5010
+[#2926]: https://github.com/tukimoto/AdGuardHome/issues/2926
+[#3418]: https://github.com/tukimoto/AdGuardHome/issues/3418
+[#3972]: https://github.com/tukimoto/AdGuardHome/issues/3972
+[#4898]: https://github.com/tukimoto/AdGuardHome/issues/4898
+[#4916]: https://github.com/tukimoto/AdGuardHome/issues/4916
+[#4925]: https://github.com/tukimoto/AdGuardHome/issues/4925
+[#4942]: https://github.com/tukimoto/AdGuardHome/issues/4942
+[#4986]: https://github.com/tukimoto/AdGuardHome/issues/4986
+[#4990]: https://github.com/tukimoto/AdGuardHome/issues/4990
+[#4993]: https://github.com/tukimoto/AdGuardHome/issues/4993
+[#5010]: https://github.com/tukimoto/AdGuardHome/issues/5010
 
-[clientid]:     https://github.com/AdguardTeam/AdGuardHome/wiki/Clients#clientid
+[clientid]:     https://github.com/tukimoto/AdGuardHome/wiki/Clients#clientid
 [go-1.18.8]:    https://groups.google.com/g/golang-announce/c/mbHY1UY3BaM
-[ms-v0.107.17]: https://github.com/AdguardTeam/AdGuardHome/milestone/53?closed=1
+[ms-v0.107.17]: https://github.com/tukimoto/AdGuardHome/milestone/53?closed=1
 
 
 
@@ -1828,13 +1828,13 @@ experimental and may break or change in the future.
   [#4983]).
 - `only application/json is allowed` errors in various APIs ([#4970]).
 
-[#3955]: https://github.com/AdguardTeam/AdGuardHome/issues/3955
-[#4945]: https://github.com/AdguardTeam/AdGuardHome/issues/4945
-[#4970]: https://github.com/AdguardTeam/AdGuardHome/issues/4970
-[#4982]: https://github.com/AdguardTeam/AdGuardHome/issues/4982
-[#4983]: https://github.com/AdguardTeam/AdGuardHome/issues/4983
+[#3955]: https://github.com/tukimoto/AdGuardHome/issues/3955
+[#4945]: https://github.com/tukimoto/AdGuardHome/issues/4945
+[#4970]: https://github.com/tukimoto/AdGuardHome/issues/4970
+[#4982]: https://github.com/tukimoto/AdGuardHome/issues/4982
+[#4983]: https://github.com/tukimoto/AdGuardHome/issues/4983
 
-[ms-v0.107.15]: https://github.com/AdguardTeam/AdGuardHome/milestone/51?closed=1
+[ms-v0.107.15]: https://github.com/tukimoto/AdGuardHome/milestone/51?closed=1
 
 
 
@@ -1891,12 +1891,12 @@ All JSON APIs that expect a body now check if the request actually has
 
 - Incorrect path template in DDR responses ([#4927]).
 
-[#2993]: https://github.com/AdguardTeam/AdGuardHome/issues/2993
-[#4927]: https://github.com/AdguardTeam/AdGuardHome/issues/4927
-[#4930]: https://github.com/AdguardTeam/AdGuardHome/issues/4930
+[#2993]: https://github.com/tukimoto/AdGuardHome/issues/2993
+[#4927]: https://github.com/tukimoto/AdGuardHome/issues/4927
+[#4930]: https://github.com/tukimoto/AdGuardHome/issues/4930
 
 [CVE-2022-32175]: https://www.cvedetails.com/cve/CVE-2022-32175
-[ms-v0.107.14]:   https://github.com/AdguardTeam/AdGuardHome/milestone/50?closed=1
+[ms-v0.107.14]:   https://github.com/tukimoto/AdGuardHome/milestone/50?closed=1
 
 
 
@@ -1919,11 +1919,11 @@ See also the [v0.107.13 GitHub milestone][ms-v0.107.13].
 
 - Panic when adding a static lease within the disabled DHCP server ([#4722]).
 
-[#4686]: https://github.com/AdguardTeam/AdGuardHome/issues/4686
-[#4722]: https://github.com/AdguardTeam/AdGuardHome/issues/4722
-[#4904]: https://github.com/AdguardTeam/AdGuardHome/issues/4904
+[#4686]: https://github.com/tukimoto/AdGuardHome/issues/4686
+[#4722]: https://github.com/tukimoto/AdGuardHome/issues/4722
+[#4904]: https://github.com/tukimoto/AdGuardHome/issues/4904
 
-[ms-v0.107.13]: https://github.com/AdguardTeam/AdGuardHome/milestone/49?closed=1
+[ms-v0.107.13]: https://github.com/tukimoto/AdGuardHome/milestone/49?closed=1
 
 
 
@@ -1977,17 +1977,17 @@ See also the [v0.107.12 GitHub milestone][ms-v0.107.12].
 - Dynamic leases created with empty hostnames ([#4745]).
 - Unnecessary logging of non-critical statistics errors ([#4850]).
 
-[#4337]: https://github.com/AdguardTeam/AdGuardHome/issues/4337
-[#4403]: https://github.com/AdguardTeam/AdGuardHome/issues/4403
-[#4535]: https://github.com/AdguardTeam/AdGuardHome/issues/4535
-[#4705]: https://github.com/AdguardTeam/AdGuardHome/issues/4705
-[#4745]: https://github.com/AdguardTeam/AdGuardHome/issues/4745
-[#4850]: https://github.com/AdguardTeam/AdGuardHome/issues/4850
-[#4863]: https://github.com/AdguardTeam/AdGuardHome/issues/4863
-[#4865]: https://github.com/AdguardTeam/AdGuardHome/issues/4865
+[#4337]: https://github.com/tukimoto/AdGuardHome/issues/4337
+[#4403]: https://github.com/tukimoto/AdGuardHome/issues/4403
+[#4535]: https://github.com/tukimoto/AdGuardHome/issues/4535
+[#4705]: https://github.com/tukimoto/AdGuardHome/issues/4705
+[#4745]: https://github.com/tukimoto/AdGuardHome/issues/4745
+[#4850]: https://github.com/tukimoto/AdGuardHome/issues/4850
+[#4863]: https://github.com/tukimoto/AdGuardHome/issues/4863
+[#4865]: https://github.com/tukimoto/AdGuardHome/issues/4865
 
 [go-1.18.6]:      https://groups.google.com/g/golang-announce/c/x49AQzIVX-s
-[ms-v0.107.12]:   https://github.com/AdguardTeam/AdGuardHome/milestone/48?closed=1
+[ms-v0.107.12]:   https://github.com/tukimoto/AdGuardHome/milestone/48?closed=1
 [rfc-2131]:       https://datatracker.ietf.org/doc/html/rfc2131
 [wiki-dhcp-opts]: https://github.com/adguardTeam/adGuardHome/wiki/DHCP#config-4
 
@@ -2009,10 +2009,10 @@ See also the [v0.107.11 GitHub milestone][ms-v0.107.11].
 
 - Migrations from releases older than v0.107.7 failing ([#4846]).
 
-[#4795]: https://github.com/AdguardTeam/AdGuardHome/issues/4795
-[#4846]: https://github.com/AdguardTeam/AdGuardHome/issues/4846
+[#4795]: https://github.com/tukimoto/AdGuardHome/issues/4795
+[#4846]: https://github.com/tukimoto/AdGuardHome/issues/4846
 
-[ms-v0.107.11]: https://github.com/AdguardTeam/AdGuardHome/milestone/47?closed=1
+[ms-v0.107.11]: https://github.com/tukimoto/AdGuardHome/milestone/47?closed=1
 
 
 
@@ -2037,13 +2037,13 @@ See also the [v0.107.10 GitHub milestone][ms-v0.107.10].
   ([#4670]).
 - Data races and concurrent map access in statistics module ([#4358], [#4342]).
 
-[#4342]: https://github.com/AdguardTeam/AdGuardHome/issues/4342
-[#4358]: https://github.com/AdguardTeam/AdGuardHome/issues/4358
-[#4670]: https://github.com/AdguardTeam/AdGuardHome/issues/4670
-[#4843]: https://github.com/AdguardTeam/AdGuardHome/issues/4843
+[#4342]: https://github.com/tukimoto/AdGuardHome/issues/4342
+[#4358]: https://github.com/tukimoto/AdGuardHome/issues/4358
+[#4670]: https://github.com/tukimoto/AdGuardHome/issues/4670
+[#4843]: https://github.com/tukimoto/AdGuardHome/issues/4843
 
 [ddr-draft]:    https://datatracker.ietf.org/doc/html/draft-ietf-add-ddr-08
-[ms-v0.107.10]: https://github.com/AdguardTeam/AdGuardHome/milestone/46?closed=1
+[ms-v0.107.10]: https://github.com/tukimoto/AdGuardHome/milestone/46?closed=1
 
 
 
@@ -2078,15 +2078,15 @@ See also the [v0.107.9 GitHub milestone][ms-v0.107.9].
 
 - Go 1.17 support, as it has reached end of life.
 
-[#3057]: https://github.com/AdguardTeam/AdGuardHome/issues/3057
-[#4517]: https://github.com/AdguardTeam/AdGuardHome/issues/4517
-[#4775]: https://github.com/AdguardTeam/AdGuardHome/issues/4775
-[#4776]: https://github.com/AdguardTeam/AdGuardHome/issues/4776
-[#4782]: https://github.com/AdguardTeam/AdGuardHome/issues/4782
-[#4836]: https://github.com/AdguardTeam/AdGuardHome/issues/4836
+[#3057]: https://github.com/tukimoto/AdGuardHome/issues/3057
+[#4517]: https://github.com/tukimoto/AdGuardHome/issues/4517
+[#4775]: https://github.com/tukimoto/AdGuardHome/issues/4775
+[#4776]: https://github.com/tukimoto/AdGuardHome/issues/4776
+[#4782]: https://github.com/tukimoto/AdGuardHome/issues/4782
+[#4836]: https://github.com/tukimoto/AdGuardHome/issues/4836
 
 [go-1.18.5]:   https://groups.google.com/g/golang-announce/c/YqYYG87xB10
-[ms-v0.107.9]: https://github.com/AdguardTeam/AdGuardHome/milestone/45?closed=1
+[ms-v0.107.9]: https://github.com/tukimoto/AdGuardHome/milestone/45?closed=1
 
 
 
@@ -2115,14 +2115,14 @@ See also the [v0.107.8 GitHub milestone][ms-v0.107.8].
   under `dhcp.local_domain_name` ([#4699]).
 - Broken service installation on OpenWrt ([#4677]).
 
-[#4219]: https://github.com/AdguardTeam/AdGuardHome/issues/4219
-[#4677]: https://github.com/AdguardTeam/AdGuardHome/issues/4677
-[#4683]: https://github.com/AdguardTeam/AdGuardHome/issues/4683
-[#4698]: https://github.com/AdguardTeam/AdGuardHome/issues/4698
-[#4699]: https://github.com/AdguardTeam/AdGuardHome/issues/4699
+[#4219]: https://github.com/tukimoto/AdGuardHome/issues/4219
+[#4677]: https://github.com/tukimoto/AdGuardHome/issues/4677
+[#4683]: https://github.com/tukimoto/AdGuardHome/issues/4683
+[#4698]: https://github.com/tukimoto/AdGuardHome/issues/4698
+[#4699]: https://github.com/tukimoto/AdGuardHome/issues/4699
 
 [go-1.17.12]:  https://groups.google.com/g/golang-announce/c/nqrv9fbR0zE
-[ms-v0.107.8]: https://github.com/AdguardTeam/AdGuardHome/milestone/44?closed=1
+[ms-v0.107.8]: https://github.com/tukimoto/AdGuardHome/milestone/44?closed=1
 
 
 
@@ -2249,35 +2249,35 @@ In this release, the schema version has changed from 12 to 14.
 - Slow version update queries making other HTTP APIs unresponsive ([#4499]).
 - ARP tables refreshing process causing excessive PTR requests ([#3157]).
 
-[#1730]: https://github.com/AdguardTeam/AdGuardHome/issues/1730
-[#3020]: https://github.com/AdguardTeam/AdGuardHome/issues/3020
-[#3142]: https://github.com/AdguardTeam/AdGuardHome/issues/3142
-[#3157]: https://github.com/AdguardTeam/AdGuardHome/issues/3157
-[#3367]: https://github.com/AdguardTeam/AdGuardHome/issues/3367
-[#3381]: https://github.com/AdguardTeam/AdGuardHome/issues/3381
-[#3503]: https://github.com/AdguardTeam/AdGuardHome/issues/3503
-[#3597]: https://github.com/AdguardTeam/AdGuardHome/issues/3597
-[#3978]: https://github.com/AdguardTeam/AdGuardHome/issues/3978
-[#4166]: https://github.com/AdguardTeam/AdGuardHome/issues/4166
-[#4213]: https://github.com/AdguardTeam/AdGuardHome/issues/4213
-[#4221]: https://github.com/AdguardTeam/AdGuardHome/issues/4221
-[#4238]: https://github.com/AdguardTeam/AdGuardHome/issues/4238
-[#4273]: https://github.com/AdguardTeam/AdGuardHome/issues/4273
-[#4276]: https://github.com/AdguardTeam/AdGuardHome/issues/4276
-[#4480]: https://github.com/AdguardTeam/AdGuardHome/issues/4480
-[#4499]: https://github.com/AdguardTeam/AdGuardHome/issues/4499
-[#4503]: https://github.com/AdguardTeam/AdGuardHome/issues/4503
-[#4533]: https://github.com/AdguardTeam/AdGuardHome/issues/4533
-[#4542]: https://github.com/AdguardTeam/AdGuardHome/issues/4542
-[#4591]: https://github.com/AdguardTeam/AdGuardHome/issues/4591
-[#4592]: https://github.com/AdguardTeam/AdGuardHome/issues/4592
+[#1730]: https://github.com/tukimoto/AdGuardHome/issues/1730
+[#3020]: https://github.com/tukimoto/AdGuardHome/issues/3020
+[#3142]: https://github.com/tukimoto/AdGuardHome/issues/3142
+[#3157]: https://github.com/tukimoto/AdGuardHome/issues/3157
+[#3367]: https://github.com/tukimoto/AdGuardHome/issues/3367
+[#3381]: https://github.com/tukimoto/AdGuardHome/issues/3381
+[#3503]: https://github.com/tukimoto/AdGuardHome/issues/3503
+[#3597]: https://github.com/tukimoto/AdGuardHome/issues/3597
+[#3978]: https://github.com/tukimoto/AdGuardHome/issues/3978
+[#4166]: https://github.com/tukimoto/AdGuardHome/issues/4166
+[#4213]: https://github.com/tukimoto/AdGuardHome/issues/4213
+[#4221]: https://github.com/tukimoto/AdGuardHome/issues/4221
+[#4238]: https://github.com/tukimoto/AdGuardHome/issues/4238
+[#4273]: https://github.com/tukimoto/AdGuardHome/issues/4273
+[#4276]: https://github.com/tukimoto/AdGuardHome/issues/4276
+[#4480]: https://github.com/tukimoto/AdGuardHome/issues/4480
+[#4499]: https://github.com/tukimoto/AdGuardHome/issues/4499
+[#4503]: https://github.com/tukimoto/AdGuardHome/issues/4503
+[#4533]: https://github.com/tukimoto/AdGuardHome/issues/4533
+[#4542]: https://github.com/tukimoto/AdGuardHome/issues/4542
+[#4591]: https://github.com/tukimoto/AdGuardHome/issues/4591
+[#4592]: https://github.com/tukimoto/AdGuardHome/issues/4592
 
 [CVE-2022-29526]: https://www.cvedetails.com/cve/CVE-2022-29526
 [CVE-2022-29804]: https://www.cvedetails.com/cve/CVE-2022-29804
 [CVE-2022-30580]: https://www.cvedetails.com/cve/CVE-2022-30580
 [CVE-2022-30629]: https://www.cvedetails.com/cve/CVE-2022-30629
 [CVE-2022-30634]: https://www.cvedetails.com/cve/CVE-2022-30634
-[ms-v0.107.7]:    https://github.com/AdguardTeam/AdGuardHome/milestone/43?closed=1
+[ms-v0.107.7]:    https://github.com/tukimoto/AdGuardHome/milestone/43?closed=1
 [rfc-9250]:       https://datatracker.ietf.org/doc/html/rfc9250
 
 
@@ -2323,15 +2323,15 @@ See also the [v0.107.6 GitHub milestone][ms-v0.107.6].
 - Go 1.16 support, since that branch of the Go compiler has reached end of life
   and doesn't receive security updates anymore.
 
-[#3717]: https://github.com/AdguardTeam/AdGuardHome/issues/3717
-[#4437]: https://github.com/AdguardTeam/AdGuardHome/issues/4437
-[#4463]: https://github.com/AdguardTeam/AdGuardHome/issues/4463
+[#3717]: https://github.com/tukimoto/AdGuardHome/issues/3717
+[#4437]: https://github.com/tukimoto/AdGuardHome/issues/4437
+[#4463]: https://github.com/tukimoto/AdGuardHome/issues/4463
 
 [CVE-2022-24675]: https://www.cvedetails.com/cve/CVE-2022-24675
 [CVE-2022-27536]: https://www.cvedetails.com/cve/CVE-2022-27536
 [CVE-2022-28327]: https://www.cvedetails.com/cve/CVE-2022-28327
 [dns-draft-02]:   https://datatracker.ietf.org/doc/html/draft-ietf-add-svcb-dns-02#section-5.1
-[ms-v0.107.6]:    https://github.com/AdguardTeam/AdGuardHome/milestone/42?closed=1
+[ms-v0.107.6]:    https://github.com/tukimoto/AdGuardHome/milestone/42?closed=1
 [repr]:           https://reproducible-builds.org/docs/source-date-epoch/
 [svcb-draft-08]:  https://www.ietf.org/archive/id/draft-ietf-dnsop-svcb-https-08.html
 
@@ -2367,13 +2367,13 @@ See also the [v0.107.4 GitHub milestone][ms-v0.107.4].
 - Unnecessarily complex hosts-related logic leading to infinite recursion in
   some cases ([#4216]).
 
-[#4216]: https://github.com/AdguardTeam/AdGuardHome/issues/4216
-[#4254]: https://github.com/AdguardTeam/AdGuardHome/issues/4254
+[#4216]: https://github.com/tukimoto/AdGuardHome/issues/4216
+[#4254]: https://github.com/tukimoto/AdGuardHome/issues/4254
 
 [CVE-2022-23772]: https://www.cvedetails.com/cve/CVE-2022-23772
 [CVE-2022-23773]: https://www.cvedetails.com/cve/CVE-2022-23773
 [CVE-2022-23806]: https://www.cvedetails.com/cve/CVE-2022-23806
-[ms-v0.107.4]:    https://github.com/AdguardTeam/AdGuardHome/milestone/41?closed=1
+[ms-v0.107.4]:    https://github.com/tukimoto/AdGuardHome/milestone/41?closed=1
 
 
 
@@ -2394,13 +2394,13 @@ See also the [v0.107.3 GitHub milestone][ms-v0.107.3].
 - Omitted aliases of hosts specified by another line within the OS's hosts file
   ([#4079]).
 
-[#4074]: https://github.com/AdguardTeam/AdGuardHome/issues/4074
-[#4079]: https://github.com/AdguardTeam/AdGuardHome/issues/4079
-[#4095]: https://github.com/AdguardTeam/AdGuardHome/issues/4095
-[#4120]: https://github.com/AdguardTeam/AdGuardHome/issues/4120
-[#4133]: https://github.com/AdguardTeam/AdGuardHome/issues/4133
+[#4074]: https://github.com/tukimoto/AdGuardHome/issues/4074
+[#4079]: https://github.com/tukimoto/AdGuardHome/issues/4079
+[#4095]: https://github.com/tukimoto/AdGuardHome/issues/4095
+[#4120]: https://github.com/tukimoto/AdGuardHome/issues/4120
+[#4133]: https://github.com/tukimoto/AdGuardHome/issues/4133
 
-[ms-v0.107.3]: https://github.com/AdguardTeam/AdGuardHome/milestone/40?closed=1
+[ms-v0.107.3]: https://github.com/tukimoto/AdGuardHome/milestone/40?closed=1
 
 
 
@@ -2412,9 +2412,9 @@ See also the [v0.107.2 GitHub milestone][ms-v0.107.2].
 
 - Infinite loops when TCP connections time out ([#4042]).
 
-[#4042]: https://github.com/AdguardTeam/AdGuardHome/issues/4042
+[#4042]: https://github.com/tukimoto/AdGuardHome/issues/4042
 
-[ms-v0.107.2]: https://github.com/AdguardTeam/AdGuardHome/milestone/38?closed=1
+[ms-v0.107.2]: https://github.com/tukimoto/AdGuardHome/milestone/38?closed=1
 
 
 
@@ -2439,15 +2439,15 @@ See also the [v0.107.1 GitHub milestone][ms-v0.107.1].
 - Panic on port availability check during installation ([#3987]).
 - Incorrect application of rules from the OS's hosts files ([#3998]).
 
-[#3868]: https://github.com/AdguardTeam/AdGuardHome/issues/3868
-[#3975]: https://github.com/AdguardTeam/AdGuardHome/issues/3975
-[#3987]: https://github.com/AdguardTeam/AdGuardHome/issues/3987
-[#3998]: https://github.com/AdguardTeam/AdGuardHome/issues/3998
-[#4008]: https://github.com/AdguardTeam/AdGuardHome/issues/4008
-[#4016]: https://github.com/AdguardTeam/AdGuardHome/issues/4016
-[#4027]: https://github.com/AdguardTeam/AdGuardHome/issues/4027
+[#3868]: https://github.com/tukimoto/AdGuardHome/issues/3868
+[#3975]: https://github.com/tukimoto/AdGuardHome/issues/3975
+[#3987]: https://github.com/tukimoto/AdGuardHome/issues/3987
+[#3998]: https://github.com/tukimoto/AdGuardHome/issues/3998
+[#4008]: https://github.com/tukimoto/AdGuardHome/issues/4008
+[#4016]: https://github.com/tukimoto/AdGuardHome/issues/4016
+[#4027]: https://github.com/tukimoto/AdGuardHome/issues/4027
 
-[ms-v0.107.1]: https://github.com/AdguardTeam/AdGuardHome/milestone/37?closed=1
+[ms-v0.107.1]: https://github.com/tukimoto/AdGuardHome/milestone/37?closed=1
 
 
 
@@ -2620,75 +2620,75 @@ In this release, the schema version has changed from 10 to 12.
 
 - Go 1.15 support.
 
-[#1381]: https://github.com/AdguardTeam/AdGuardHome/issues/1381
-[#1558]: https://github.com/AdguardTeam/AdGuardHome/issues/1558
-[#1691]: https://github.com/AdguardTeam/AdGuardHome/issues/1691
-[#1898]: https://github.com/AdguardTeam/AdGuardHome/issues/1898
-[#1992]: https://github.com/AdguardTeam/AdGuardHome/issues/1992
-[#2141]: https://github.com/AdguardTeam/AdGuardHome/issues/2141
-[#2145]: https://github.com/AdguardTeam/AdGuardHome/issues/2145
-[#2280]: https://github.com/AdguardTeam/AdGuardHome/issues/2280
-[#2439]: https://github.com/AdguardTeam/AdGuardHome/issues/2439
-[#2441]: https://github.com/AdguardTeam/AdGuardHome/issues/2441
-[#2443]: https://github.com/AdguardTeam/AdGuardHome/issues/2443
-[#2504]: https://github.com/AdguardTeam/AdGuardHome/issues/2504
-[#2624]: https://github.com/AdguardTeam/AdGuardHome/issues/2624
-[#2763]: https://github.com/AdguardTeam/AdGuardHome/issues/2763
-[#2799]: https://github.com/AdguardTeam/AdGuardHome/issues/2799
-[#2807]: https://github.com/AdguardTeam/AdGuardHome/issues/2807
-[#3012]: https://github.com/AdguardTeam/AdGuardHome/issues/3012
-[#3013]: https://github.com/AdguardTeam/AdGuardHome/issues/3013
-[#3136]: https://github.com/AdguardTeam/AdGuardHome/issues/3136
-[#3162]: https://github.com/AdguardTeam/AdGuardHome/issues/3162
-[#3166]: https://github.com/AdguardTeam/AdGuardHome/issues/3166
-[#3172]: https://github.com/AdguardTeam/AdGuardHome/issues/3172
-[#3175]: https://github.com/AdguardTeam/AdGuardHome/issues/3175
-[#3184]: https://github.com/AdguardTeam/AdGuardHome/issues/3184
-[#3185]: https://github.com/AdguardTeam/AdGuardHome/issues/3185
-[#3186]: https://github.com/AdguardTeam/AdGuardHome/issues/3186
-[#3194]: https://github.com/AdguardTeam/AdGuardHome/issues/3194
-[#3198]: https://github.com/AdguardTeam/AdGuardHome/issues/3198
-[#3217]: https://github.com/AdguardTeam/AdGuardHome/issues/3217
-[#3225]: https://github.com/AdguardTeam/AdGuardHome/issues/3225
-[#3226]: https://github.com/AdguardTeam/AdGuardHome/issues/3226
-[#3256]: https://github.com/AdguardTeam/AdGuardHome/issues/3256
-[#3257]: https://github.com/AdguardTeam/AdGuardHome/issues/3257
-[#3289]: https://github.com/AdguardTeam/AdGuardHome/issues/3289
-[#3335]: https://github.com/AdguardTeam/AdGuardHome/issues/3335
-[#3343]: https://github.com/AdguardTeam/AdGuardHome/issues/3343
-[#3351]: https://github.com/AdguardTeam/AdGuardHome/issues/3351
-[#3371]: https://github.com/AdguardTeam/AdGuardHome/issues/3371
-[#3372]: https://github.com/AdguardTeam/AdGuardHome/issues/3372
-[#3417]: https://github.com/AdguardTeam/AdGuardHome/issues/3417
-[#3419]: https://github.com/AdguardTeam/AdGuardHome/issues/3419
-[#3435]: https://github.com/AdguardTeam/AdGuardHome/issues/3435
-[#3437]: https://github.com/AdguardTeam/AdGuardHome/issues/3437
-[#3443]: https://github.com/AdguardTeam/AdGuardHome/issues/3443
-[#3450]: https://github.com/AdguardTeam/AdGuardHome/issues/3450
-[#3457]: https://github.com/AdguardTeam/AdGuardHome/issues/3457
-[#3506]: https://github.com/AdguardTeam/AdGuardHome/issues/3506
-[#3529]: https://github.com/AdguardTeam/AdGuardHome/issues/3529
-[#3538]: https://github.com/AdguardTeam/AdGuardHome/issues/3538
-[#3551]: https://github.com/AdguardTeam/AdGuardHome/issues/3551
-[#3558]: https://github.com/AdguardTeam/AdGuardHome/issues/3558
-[#3564]: https://github.com/AdguardTeam/AdGuardHome/issues/3564
-[#3567]: https://github.com/AdguardTeam/AdGuardHome/issues/3567
-[#3579]: https://github.com/AdguardTeam/AdGuardHome/issues/3579
-[#3638]: https://github.com/AdguardTeam/AdGuardHome/issues/3638
-[#3655]: https://github.com/AdguardTeam/AdGuardHome/issues/3655
-[#3707]: https://github.com/AdguardTeam/AdGuardHome/issues/3707
-[#3737]: https://github.com/AdguardTeam/AdGuardHome/issues/3737
-[#3744]: https://github.com/AdguardTeam/AdGuardHome/issues/3744
-[#3772]: https://github.com/AdguardTeam/AdGuardHome/issues/3772
-[#3778]: https://github.com/AdguardTeam/AdGuardHome/issues/3778
-[#3815]: https://github.com/AdguardTeam/AdGuardHome/issues/3815
-[#3835]: https://github.com/AdguardTeam/AdGuardHome/issues/3835
-[#3887]: https://github.com/AdguardTeam/AdGuardHome/issues/3887
-[#3890]: https://github.com/AdguardTeam/AdGuardHome/issues/3890
-[#3904]: https://github.com/AdguardTeam/AdGuardHome/issues/3904
-[#3933]: https://github.com/AdguardTeam/AdGuardHome/pull/3933
+[#1381]: https://github.com/tukimoto/AdGuardHome/issues/1381
+[#1558]: https://github.com/tukimoto/AdGuardHome/issues/1558
+[#1691]: https://github.com/tukimoto/AdGuardHome/issues/1691
+[#1898]: https://github.com/tukimoto/AdGuardHome/issues/1898
+[#1992]: https://github.com/tukimoto/AdGuardHome/issues/1992
+[#2141]: https://github.com/tukimoto/AdGuardHome/issues/2141
+[#2145]: https://github.com/tukimoto/AdGuardHome/issues/2145
+[#2280]: https://github.com/tukimoto/AdGuardHome/issues/2280
+[#2439]: https://github.com/tukimoto/AdGuardHome/issues/2439
+[#2441]: https://github.com/tukimoto/AdGuardHome/issues/2441
+[#2443]: https://github.com/tukimoto/AdGuardHome/issues/2443
+[#2504]: https://github.com/tukimoto/AdGuardHome/issues/2504
+[#2624]: https://github.com/tukimoto/AdGuardHome/issues/2624
+[#2763]: https://github.com/tukimoto/AdGuardHome/issues/2763
+[#2799]: https://github.com/tukimoto/AdGuardHome/issues/2799
+[#2807]: https://github.com/tukimoto/AdGuardHome/issues/2807
+[#3012]: https://github.com/tukimoto/AdGuardHome/issues/3012
+[#3013]: https://github.com/tukimoto/AdGuardHome/issues/3013
+[#3136]: https://github.com/tukimoto/AdGuardHome/issues/3136
+[#3162]: https://github.com/tukimoto/AdGuardHome/issues/3162
+[#3166]: https://github.com/tukimoto/AdGuardHome/issues/3166
+[#3172]: https://github.com/tukimoto/AdGuardHome/issues/3172
+[#3175]: https://github.com/tukimoto/AdGuardHome/issues/3175
+[#3184]: https://github.com/tukimoto/AdGuardHome/issues/3184
+[#3185]: https://github.com/tukimoto/AdGuardHome/issues/3185
+[#3186]: https://github.com/tukimoto/AdGuardHome/issues/3186
+[#3194]: https://github.com/tukimoto/AdGuardHome/issues/3194
+[#3198]: https://github.com/tukimoto/AdGuardHome/issues/3198
+[#3217]: https://github.com/tukimoto/AdGuardHome/issues/3217
+[#3225]: https://github.com/tukimoto/AdGuardHome/issues/3225
+[#3226]: https://github.com/tukimoto/AdGuardHome/issues/3226
+[#3256]: https://github.com/tukimoto/AdGuardHome/issues/3256
+[#3257]: https://github.com/tukimoto/AdGuardHome/issues/3257
+[#3289]: https://github.com/tukimoto/AdGuardHome/issues/3289
+[#3335]: https://github.com/tukimoto/AdGuardHome/issues/3335
+[#3343]: https://github.com/tukimoto/AdGuardHome/issues/3343
+[#3351]: https://github.com/tukimoto/AdGuardHome/issues/3351
+[#3371]: https://github.com/tukimoto/AdGuardHome/issues/3371
+[#3372]: https://github.com/tukimoto/AdGuardHome/issues/3372
+[#3417]: https://github.com/tukimoto/AdGuardHome/issues/3417
+[#3419]: https://github.com/tukimoto/AdGuardHome/issues/3419
+[#3435]: https://github.com/tukimoto/AdGuardHome/issues/3435
+[#3437]: https://github.com/tukimoto/AdGuardHome/issues/3437
+[#3443]: https://github.com/tukimoto/AdGuardHome/issues/3443
+[#3450]: https://github.com/tukimoto/AdGuardHome/issues/3450
+[#3457]: https://github.com/tukimoto/AdGuardHome/issues/3457
+[#3506]: https://github.com/tukimoto/AdGuardHome/issues/3506
+[#3529]: https://github.com/tukimoto/AdGuardHome/issues/3529
+[#3538]: https://github.com/tukimoto/AdGuardHome/issues/3538
+[#3551]: https://github.com/tukimoto/AdGuardHome/issues/3551
+[#3558]: https://github.com/tukimoto/AdGuardHome/issues/3558
+[#3564]: https://github.com/tukimoto/AdGuardHome/issues/3564
+[#3567]: https://github.com/tukimoto/AdGuardHome/issues/3567
+[#3579]: https://github.com/tukimoto/AdGuardHome/issues/3579
+[#3638]: https://github.com/tukimoto/AdGuardHome/issues/3638
+[#3655]: https://github.com/tukimoto/AdGuardHome/issues/3655
+[#3707]: https://github.com/tukimoto/AdGuardHome/issues/3707
+[#3737]: https://github.com/tukimoto/AdGuardHome/issues/3737
+[#3744]: https://github.com/tukimoto/AdGuardHome/issues/3744
+[#3772]: https://github.com/tukimoto/AdGuardHome/issues/3772
+[#3778]: https://github.com/tukimoto/AdGuardHome/issues/3778
+[#3815]: https://github.com/tukimoto/AdGuardHome/issues/3815
+[#3835]: https://github.com/tukimoto/AdGuardHome/issues/3835
+[#3887]: https://github.com/tukimoto/AdGuardHome/issues/3887
+[#3890]: https://github.com/tukimoto/AdGuardHome/issues/3890
+[#3904]: https://github.com/tukimoto/AdGuardHome/issues/3904
+[#3933]: https://github.com/tukimoto/AdGuardHome/pull/3933
 
-[ms-v0.107.0]: https://github.com/AdguardTeam/AdGuardHome/milestone/23?closed=1
+[ms-v0.107.0]: https://github.com/tukimoto/AdGuardHome/milestone/23?closed=1
 [rfc-9000]:    https://datatracker.ietf.org/doc/html/rfc9000
 
 
@@ -2717,16 +2717,16 @@ See also the [v0.106.3 GitHub milestone][ms-v0.106.3].
   general settings ([#2875]).
 - Disallowed domains are now case-insensitive ([#3115]).
 
-[#2462]: https://github.com/AdguardTeam/AdGuardHome/issues/2462
-[#2542]: https://github.com/AdguardTeam/AdGuardHome/issues/2542
-[#2875]: https://github.com/AdguardTeam/AdGuardHome/issues/2875
-[#3053]: https://github.com/AdguardTeam/AdGuardHome/issues/3053
-[#3064]: https://github.com/AdguardTeam/AdGuardHome/issues/3064
-[#3107]: https://github.com/AdguardTeam/AdGuardHome/issues/3107
-[#3115]: https://github.com/AdguardTeam/AdGuardHome/issues/3115
-[#3127]: https://github.com/AdguardTeam/AdGuardHome/issues/3127
+[#2462]: https://github.com/tukimoto/AdGuardHome/issues/2462
+[#2542]: https://github.com/tukimoto/AdGuardHome/issues/2542
+[#2875]: https://github.com/tukimoto/AdGuardHome/issues/2875
+[#3053]: https://github.com/tukimoto/AdGuardHome/issues/3053
+[#3064]: https://github.com/tukimoto/AdGuardHome/issues/3064
+[#3107]: https://github.com/tukimoto/AdGuardHome/issues/3107
+[#3115]: https://github.com/tukimoto/AdGuardHome/issues/3115
+[#3127]: https://github.com/tukimoto/AdGuardHome/issues/3127
 
-[ms-v0.106.3]: https://github.com/AdguardTeam/AdGuardHome/milestone/35?closed=1
+[ms-v0.106.3]: https://github.com/tukimoto/AdGuardHome/milestone/35?closed=1
 
 
 
@@ -2738,9 +2738,9 @@ See also the [v0.106.2 GitHub milestone][ms-v0.106.2].
 
 - Uniqueness validation for dynamic DHCP leases ([#3056]).
 
-[#3056]: https://github.com/AdguardTeam/AdGuardHome/issues/3056
+[#3056]: https://github.com/tukimoto/AdGuardHome/issues/3056
 
-[ms-v0.106.2]: https://github.com/AdguardTeam/AdGuardHome/milestone/34?closed=1
+[ms-v0.106.2]: https://github.com/tukimoto/AdGuardHome/milestone/34?closed=1
 
 
 
@@ -2754,11 +2754,11 @@ See also the [v0.106.1 GitHub milestone][ms-v0.106.1].
 - Normalization of previously-saved invalid static DHCP leases ([#3027]).
 - Validation of IPv6 addresses with zones in system resolvers ([#3022]).
 
-[#3022]: https://github.com/AdguardTeam/AdGuardHome/issues/3022
-[#3027]: https://github.com/AdguardTeam/AdGuardHome/issues/3027
-[#3028]: https://github.com/AdguardTeam/AdGuardHome/issues/3028
+[#3022]: https://github.com/tukimoto/AdGuardHome/issues/3022
+[#3027]: https://github.com/tukimoto/AdGuardHome/issues/3027
+[#3028]: https://github.com/tukimoto/AdGuardHome/issues/3028
 
-[ms-v0.106.1]: https://github.com/AdguardTeam/AdGuardHome/milestone/33?closed=1
+[ms-v0.106.1]: https://github.com/tukimoto/AdGuardHome/milestone/33?closed=1
 
 
 
@@ -2825,38 +2825,38 @@ See also the [v0.106.0 GitHub milestone][ms-v0.106.0].
 
 - Go 1.14 support.
 
-[#1273]: https://github.com/AdguardTeam/AdGuardHome/issues/1273
-[#1401]: https://github.com/AdguardTeam/AdGuardHome/issues/1401
-[#1947]: https://github.com/AdguardTeam/AdGuardHome/issues/1947
-[#2385]: https://github.com/AdguardTeam/AdGuardHome/issues/2385
-[#2393]: https://github.com/AdguardTeam/AdGuardHome/issues/2393
-[#2412]: https://github.com/AdguardTeam/AdGuardHome/issues/2412
-[#2416]: https://github.com/AdguardTeam/AdGuardHome/issues/2416
-[#2498]: https://github.com/AdguardTeam/AdGuardHome/issues/2498
-[#2533]: https://github.com/AdguardTeam/AdGuardHome/issues/2533
-[#2541]: https://github.com/AdguardTeam/AdGuardHome/issues/2541
-[#2704]: https://github.com/AdguardTeam/AdGuardHome/issues/2704
-[#2723]: https://github.com/AdguardTeam/AdGuardHome/issues/2723
-[#2824]: https://github.com/AdguardTeam/AdGuardHome/issues/2824
-[#2826]: https://github.com/AdguardTeam/AdGuardHome/issues/2826
-[#2828]: https://github.com/AdguardTeam/AdGuardHome/issues/2828
-[#2835]: https://github.com/AdguardTeam/AdGuardHome/issues/2835
-[#2838]: https://github.com/AdguardTeam/AdGuardHome/issues/2838
-[#2843]: https://github.com/AdguardTeam/AdGuardHome/issues/2843
-[#2889]: https://github.com/AdguardTeam/AdGuardHome/issues/2889
-[#2923]: https://github.com/AdguardTeam/AdGuardHome/issues/2923
-[#2927]: https://github.com/AdguardTeam/AdGuardHome/issues/2927
-[#2934]: https://github.com/AdguardTeam/AdGuardHome/issues/2934
-[#2945]: https://github.com/AdguardTeam/AdGuardHome/issues/2945
-[#2947]: https://github.com/AdguardTeam/AdGuardHome/issues/2947
-[#2952]: https://github.com/AdguardTeam/AdGuardHome/issues/2952
-[#2954]: https://github.com/AdguardTeam/AdGuardHome/issues/2954
-[#2961]: https://github.com/AdguardTeam/AdGuardHome/issues/2961
-[#2981]: https://github.com/AdguardTeam/AdGuardHome/issues/2981
-[#2994]: https://github.com/AdguardTeam/AdGuardHome/issues/2994
+[#1273]: https://github.com/tukimoto/AdGuardHome/issues/1273
+[#1401]: https://github.com/tukimoto/AdGuardHome/issues/1401
+[#1947]: https://github.com/tukimoto/AdGuardHome/issues/1947
+[#2385]: https://github.com/tukimoto/AdGuardHome/issues/2385
+[#2393]: https://github.com/tukimoto/AdGuardHome/issues/2393
+[#2412]: https://github.com/tukimoto/AdGuardHome/issues/2412
+[#2416]: https://github.com/tukimoto/AdGuardHome/issues/2416
+[#2498]: https://github.com/tukimoto/AdGuardHome/issues/2498
+[#2533]: https://github.com/tukimoto/AdGuardHome/issues/2533
+[#2541]: https://github.com/tukimoto/AdGuardHome/issues/2541
+[#2704]: https://github.com/tukimoto/AdGuardHome/issues/2704
+[#2723]: https://github.com/tukimoto/AdGuardHome/issues/2723
+[#2824]: https://github.com/tukimoto/AdGuardHome/issues/2824
+[#2826]: https://github.com/tukimoto/AdGuardHome/issues/2826
+[#2828]: https://github.com/tukimoto/AdGuardHome/issues/2828
+[#2835]: https://github.com/tukimoto/AdGuardHome/issues/2835
+[#2838]: https://github.com/tukimoto/AdGuardHome/issues/2838
+[#2843]: https://github.com/tukimoto/AdGuardHome/issues/2843
+[#2889]: https://github.com/tukimoto/AdGuardHome/issues/2889
+[#2923]: https://github.com/tukimoto/AdGuardHome/issues/2923
+[#2927]: https://github.com/tukimoto/AdGuardHome/issues/2927
+[#2934]: https://github.com/tukimoto/AdGuardHome/issues/2934
+[#2945]: https://github.com/tukimoto/AdGuardHome/issues/2945
+[#2947]: https://github.com/tukimoto/AdGuardHome/issues/2947
+[#2952]: https://github.com/tukimoto/AdGuardHome/issues/2952
+[#2954]: https://github.com/tukimoto/AdGuardHome/issues/2954
+[#2961]: https://github.com/tukimoto/AdGuardHome/issues/2961
+[#2981]: https://github.com/tukimoto/AdGuardHome/issues/2981
+[#2994]: https://github.com/tukimoto/AdGuardHome/issues/2994
 
 [doq-draft-02]: https://tools.ietf.org/html/draft-ietf-dprive-dnsoquic-02
-[ms-v0.106.0]:  https://github.com/AdguardTeam/AdGuardHome/milestone/26?closed=1
+[ms-v0.106.0]:  https://github.com/tukimoto/AdGuardHome/milestone/26?closed=1
 
 
 
@@ -2879,16 +2879,16 @@ See also the [v0.105.2 GitHub milestone][ms-v0.105.2].
 - Incomplete DNS upstreams validation ([#2674]).
 - Wrong parsing of DHCP options of the `ip` type ([#2688]).
 
-[#2470]: https://github.com/AdguardTeam/AdGuardHome/issues/2470
-[#2582]: https://github.com/AdguardTeam/AdGuardHome/issues/2582
-[#2600]: https://github.com/AdguardTeam/AdGuardHome/issues/2600
-[#2674]: https://github.com/AdguardTeam/AdGuardHome/issues/2674
-[#2681]: https://github.com/AdguardTeam/AdGuardHome/issues/2681
-[#2688]: https://github.com/AdguardTeam/AdGuardHome/issues/2688
-[#2692]: https://github.com/AdguardTeam/AdGuardHome/issues/2692
-[#2757]: https://github.com/AdguardTeam/AdGuardHome/issues/2757
+[#2470]: https://github.com/tukimoto/AdGuardHome/issues/2470
+[#2582]: https://github.com/tukimoto/AdGuardHome/issues/2582
+[#2600]: https://github.com/tukimoto/AdGuardHome/issues/2600
+[#2674]: https://github.com/tukimoto/AdGuardHome/issues/2674
+[#2681]: https://github.com/tukimoto/AdGuardHome/issues/2681
+[#2688]: https://github.com/tukimoto/AdGuardHome/issues/2688
+[#2692]: https://github.com/tukimoto/AdGuardHome/issues/2692
+[#2757]: https://github.com/tukimoto/AdGuardHome/issues/2757
 
-[ms-v0.105.2]: https://github.com/AdguardTeam/AdGuardHome/milestone/32?closed=1
+[ms-v0.105.2]: https://github.com/tukimoto/AdGuardHome/milestone/32?closed=1
 
 
 
@@ -2922,20 +2922,20 @@ See also the [v0.105.1 GitHub milestone][ms-v0.105.1].
 - Incorrect version tag in the Docker release ([#2663]).
 - DNSCrypt queries weren't marked as such in logs ([#2662]).
 
-[#2641]: https://github.com/AdguardTeam/AdGuardHome/issues/2641
-[#2653]: https://github.com/AdguardTeam/AdGuardHome/issues/2653
-[#2658]: https://github.com/AdguardTeam/AdGuardHome/issues/2658
-[#2662]: https://github.com/AdguardTeam/AdGuardHome/issues/2662
-[#2663]: https://github.com/AdguardTeam/AdGuardHome/issues/2663
-[#2664]: https://github.com/AdguardTeam/AdGuardHome/issues/2664
-[#2666]: https://github.com/AdguardTeam/AdGuardHome/issues/2666
-[#2667]: https://github.com/AdguardTeam/AdGuardHome/issues/2667
-[#2671]: https://github.com/AdguardTeam/AdGuardHome/issues/2671
-[#2675]: https://github.com/AdguardTeam/AdGuardHome/issues/2675
-[#2678]: https://github.com/AdguardTeam/AdGuardHome/issues/2678
-[#2682]: https://github.com/AdguardTeam/AdGuardHome/issues/2682
+[#2641]: https://github.com/tukimoto/AdGuardHome/issues/2641
+[#2653]: https://github.com/tukimoto/AdGuardHome/issues/2653
+[#2658]: https://github.com/tukimoto/AdGuardHome/issues/2658
+[#2662]: https://github.com/tukimoto/AdGuardHome/issues/2662
+[#2663]: https://github.com/tukimoto/AdGuardHome/issues/2663
+[#2664]: https://github.com/tukimoto/AdGuardHome/issues/2664
+[#2666]: https://github.com/tukimoto/AdGuardHome/issues/2666
+[#2667]: https://github.com/tukimoto/AdGuardHome/issues/2667
+[#2671]: https://github.com/tukimoto/AdGuardHome/issues/2671
+[#2675]: https://github.com/tukimoto/AdGuardHome/issues/2675
+[#2678]: https://github.com/tukimoto/AdGuardHome/issues/2678
+[#2682]: https://github.com/tukimoto/AdGuardHome/issues/2682
 
-[ms-v0.105.1]: https://github.com/AdguardTeam/AdGuardHome/milestone/31?closed=1
+[ms-v0.105.1]: https://github.com/tukimoto/AdGuardHome/milestone/31?closed=1
 
 
 
@@ -3007,40 +3007,40 @@ See also the [v0.105.0 GitHub milestone][ms-v0.105.0].
   `scripts/make/build-docker.sh` which uses `scripts/make/Dockerfile`.
 - Support for pre-v0.99.3 format of query logs ([#2102]).
 
-[#1361]: https://github.com/AdguardTeam/AdGuardHome/issues/1361
-[#1383]: https://github.com/AdguardTeam/AdGuardHome/issues/1383
-[#2102]: https://github.com/AdguardTeam/AdGuardHome/issues/2102
-[#2179]: https://github.com/AdguardTeam/AdGuardHome/issues/2179
-[#2224]: https://github.com/AdguardTeam/AdGuardHome/issues/2224
-[#2225]: https://github.com/AdguardTeam/AdGuardHome/issues/2225
-[#2231]: https://github.com/AdguardTeam/AdGuardHome/issues/2231
-[#2271]: https://github.com/AdguardTeam/AdGuardHome/issues/2271
-[#2276]: https://github.com/AdguardTeam/AdGuardHome/issues/2276
-[#2293]: https://github.com/AdguardTeam/AdGuardHome/issues/2293
-[#2297]: https://github.com/AdguardTeam/AdGuardHome/issues/2297
-[#2302]: https://github.com/AdguardTeam/AdGuardHome/issues/2302
-[#2304]: https://github.com/AdguardTeam/AdGuardHome/issues/2304
-[#2305]: https://github.com/AdguardTeam/AdGuardHome/issues/2305
-[#2306]: https://github.com/AdguardTeam/AdGuardHome/issues/2306
-[#2337]: https://github.com/AdguardTeam/AdGuardHome/issues/2337
-[#2343]: https://github.com/AdguardTeam/AdGuardHome/issues/2343
-[#2345]: https://github.com/AdguardTeam/AdGuardHome/issues/2345
-[#2355]: https://github.com/AdguardTeam/AdGuardHome/issues/2355
-[#2358]: https://github.com/AdguardTeam/AdGuardHome/issues/2358
-[#2391]: https://github.com/AdguardTeam/AdGuardHome/issues/2391
-[#2394]: https://github.com/AdguardTeam/AdGuardHome/issues/2394
-[#2401]: https://github.com/AdguardTeam/AdGuardHome/issues/2401
-[#2459]: https://github.com/AdguardTeam/AdGuardHome/issues/2459
-[#2484]: https://github.com/AdguardTeam/AdGuardHome/issues/2484
-[#2508]: https://github.com/AdguardTeam/AdGuardHome/issues/2508
-[#2509]: https://github.com/AdguardTeam/AdGuardHome/issues/2509
-[#2552]: https://github.com/AdguardTeam/AdGuardHome/issues/2552
-[#2589]: https://github.com/AdguardTeam/AdGuardHome/issues/2589
-[#2630]: https://github.com/AdguardTeam/AdGuardHome/issues/2630
-[#2639]: https://github.com/AdguardTeam/AdGuardHome/issues/2639
-[#2646]: https://github.com/AdguardTeam/AdGuardHome/issues/2646
+[#1361]: https://github.com/tukimoto/AdGuardHome/issues/1361
+[#1383]: https://github.com/tukimoto/AdGuardHome/issues/1383
+[#2102]: https://github.com/tukimoto/AdGuardHome/issues/2102
+[#2179]: https://github.com/tukimoto/AdGuardHome/issues/2179
+[#2224]: https://github.com/tukimoto/AdGuardHome/issues/2224
+[#2225]: https://github.com/tukimoto/AdGuardHome/issues/2225
+[#2231]: https://github.com/tukimoto/AdGuardHome/issues/2231
+[#2271]: https://github.com/tukimoto/AdGuardHome/issues/2271
+[#2276]: https://github.com/tukimoto/AdGuardHome/issues/2276
+[#2293]: https://github.com/tukimoto/AdGuardHome/issues/2293
+[#2297]: https://github.com/tukimoto/AdGuardHome/issues/2297
+[#2302]: https://github.com/tukimoto/AdGuardHome/issues/2302
+[#2304]: https://github.com/tukimoto/AdGuardHome/issues/2304
+[#2305]: https://github.com/tukimoto/AdGuardHome/issues/2305
+[#2306]: https://github.com/tukimoto/AdGuardHome/issues/2306
+[#2337]: https://github.com/tukimoto/AdGuardHome/issues/2337
+[#2343]: https://github.com/tukimoto/AdGuardHome/issues/2343
+[#2345]: https://github.com/tukimoto/AdGuardHome/issues/2345
+[#2355]: https://github.com/tukimoto/AdGuardHome/issues/2355
+[#2358]: https://github.com/tukimoto/AdGuardHome/issues/2358
+[#2391]: https://github.com/tukimoto/AdGuardHome/issues/2391
+[#2394]: https://github.com/tukimoto/AdGuardHome/issues/2394
+[#2401]: https://github.com/tukimoto/AdGuardHome/issues/2401
+[#2459]: https://github.com/tukimoto/AdGuardHome/issues/2459
+[#2484]: https://github.com/tukimoto/AdGuardHome/issues/2484
+[#2508]: https://github.com/tukimoto/AdGuardHome/issues/2508
+[#2509]: https://github.com/tukimoto/AdGuardHome/issues/2509
+[#2552]: https://github.com/tukimoto/AdGuardHome/issues/2552
+[#2589]: https://github.com/tukimoto/AdGuardHome/issues/2589
+[#2630]: https://github.com/tukimoto/AdGuardHome/issues/2630
+[#2639]: https://github.com/tukimoto/AdGuardHome/issues/2639
+[#2646]: https://github.com/tukimoto/AdGuardHome/issues/2646
 
-[ms-v0.105.0]: https://github.com/AdguardTeam/AdGuardHome/milestone/27?closed=1
+[ms-v0.105.0]: https://github.com/tukimoto/AdGuardHome/milestone/27?closed=1
 
 
 
@@ -3052,9 +3052,9 @@ See also the [v0.104.3 GitHub milestone][ms-v0.104.3].
 
 - The accidentally exposed profiler HTTP API ([#2336]).
 
-[#2336]: https://github.com/AdguardTeam/AdGuardHome/issues/2336
+[#2336]: https://github.com/tukimoto/AdGuardHome/issues/2336
 
-[ms-v0.104.3]: https://github.com/AdguardTeam/AdGuardHome/milestone/30?closed=1
+[ms-v0.104.3]: https://github.com/tukimoto/AdGuardHome/milestone/30?closed=1
 
 
 
@@ -3079,82 +3079,82 @@ See also the [v0.104.2 GitHub milestone][ms-v0.104.2].
   correctly shows that DHCP is not currently available on that OS ([#2295]).
 - Infinite loop in `/dhcp/find_active_dhcp` ([#2301]).
 
-[#2273]: https://github.com/AdguardTeam/AdGuardHome/issues/2273
-[#2294]: https://github.com/AdguardTeam/AdGuardHome/issues/2294
-[#2295]: https://github.com/AdguardTeam/AdGuardHome/issues/2295
-[#2301]: https://github.com/AdguardTeam/AdGuardHome/issues/2301
-[#2324]: https://github.com/AdguardTeam/AdGuardHome/issues/2324
-[#2325]: https://github.com/AdguardTeam/AdGuardHome/issues/2325
+[#2273]: https://github.com/tukimoto/AdGuardHome/issues/2273
+[#2294]: https://github.com/tukimoto/AdGuardHome/issues/2294
+[#2295]: https://github.com/tukimoto/AdGuardHome/issues/2295
+[#2301]: https://github.com/tukimoto/AdGuardHome/issues/2301
+[#2324]: https://github.com/tukimoto/AdGuardHome/issues/2324
+[#2325]: https://github.com/tukimoto/AdGuardHome/issues/2325
 
-[ms-v0.104.2]: https://github.com/AdguardTeam/AdGuardHome/milestone/28?closed=1
+[ms-v0.104.2]: https://github.com/tukimoto/AdGuardHome/milestone/28?closed=1
 
 
 
 <!--
-[Unreleased]: https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.53...HEAD
-[v0.107.53]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.52...v0.107.53
+[Unreleased]: https://github.com/tukimoto/AdGuardHome/compare/v0.107.53...HEAD
+[v0.107.53]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.52...v0.107.53
 -->
 
-[Unreleased]: https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.52...HEAD
-[v0.107.52]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.51...v0.107.52
-[v0.107.51]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.50...v0.107.51
-[v0.107.50]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.49...v0.107.50
-[v0.107.49]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.48...v0.107.49
-[v0.107.48]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.47...v0.107.48
-[v0.107.47]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.46...v0.107.47
-[v0.107.46]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.45...v0.107.46
-[v0.107.45]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.44...v0.107.45
-[v0.107.44]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.43...v0.107.44
-[v0.107.43]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.42...v0.107.43
-[v0.107.42]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.41...v0.107.42
-[v0.107.41]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.40...v0.107.41
-[v0.107.40]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.39...v0.107.40
-[v0.107.39]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.38...v0.107.39
-[v0.107.38]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.37...v0.107.38
-[v0.107.37]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.36...v0.107.37
-[v0.107.36]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.35...v0.107.36
-[v0.107.35]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.34...v0.107.35
-[v0.107.34]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.33...v0.107.34
-[v0.107.33]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.32...v0.107.33
-[v0.107.32]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.31...v0.107.32
-[v0.107.31]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.30...v0.107.31
-[v0.107.30]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.29...v0.107.30
-[v0.107.29]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.28...v0.107.29
-[v0.107.28]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.27...v0.107.28
-[v0.107.27]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.26...v0.107.27
-[v0.107.26]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.25...v0.107.26
-[v0.107.25]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.24...v0.107.25
-[v0.107.24]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.23...v0.107.24
-[v0.107.23]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.22...v0.107.23
-[v0.107.22]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.21...v0.107.22
-[v0.107.21]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.20...v0.107.21
-[v0.107.20]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.19...v0.107.20
-[v0.107.19]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.18...v0.107.19
-[v0.107.18]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.17...v0.107.18
-[v0.107.17]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.16...v0.107.17
-[v0.107.16]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.15...v0.107.16
-[v0.107.15]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.14...v0.107.15
-[v0.107.14]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.13...v0.107.14
-[v0.107.13]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.12...v0.107.13
-[v0.107.12]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.11...v0.107.12
-[v0.107.11]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.10...v0.107.11
-[v0.107.10]:  https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.9...v0.107.10
-[v0.107.9]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.8...v0.107.9
-[v0.107.8]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.7...v0.107.8
-[v0.107.7]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.6...v0.107.7
-[v0.107.6]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.5...v0.107.6
-[v0.107.5]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.4...v0.107.5
-[v0.107.4]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.3...v0.107.4
-[v0.107.3]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.2...v0.107.3
-[v0.107.2]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.1...v0.107.2
-[v0.107.1]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.107.0...v0.107.1
-[v0.107.0]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.106.3...v0.107.0
-[v0.106.3]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.106.2...v0.106.3
-[v0.106.2]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.106.1...v0.106.2
-[v0.106.1]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.106.0...v0.106.1
-[v0.106.0]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.105.2...v0.106.0
-[v0.105.2]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.105.1...v0.105.2
-[v0.105.1]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.105.0...v0.105.1
-[v0.105.0]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.104.3...v0.105.0
-[v0.104.3]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.104.2...v0.104.3
-[v0.104.2]:   https://github.com/AdguardTeam/AdGuardHome/compare/v0.104.1...v0.104.2
+[Unreleased]: https://github.com/tukimoto/AdGuardHome/compare/v0.107.52...HEAD
+[v0.107.52]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.51...v0.107.52
+[v0.107.51]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.50...v0.107.51
+[v0.107.50]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.49...v0.107.50
+[v0.107.49]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.48...v0.107.49
+[v0.107.48]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.47...v0.107.48
+[v0.107.47]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.46...v0.107.47
+[v0.107.46]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.45...v0.107.46
+[v0.107.45]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.44...v0.107.45
+[v0.107.44]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.43...v0.107.44
+[v0.107.43]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.42...v0.107.43
+[v0.107.42]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.41...v0.107.42
+[v0.107.41]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.40...v0.107.41
+[v0.107.40]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.39...v0.107.40
+[v0.107.39]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.38...v0.107.39
+[v0.107.38]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.37...v0.107.38
+[v0.107.37]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.36...v0.107.37
+[v0.107.36]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.35...v0.107.36
+[v0.107.35]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.34...v0.107.35
+[v0.107.34]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.33...v0.107.34
+[v0.107.33]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.32...v0.107.33
+[v0.107.32]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.31...v0.107.32
+[v0.107.31]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.30...v0.107.31
+[v0.107.30]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.29...v0.107.30
+[v0.107.29]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.28...v0.107.29
+[v0.107.28]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.27...v0.107.28
+[v0.107.27]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.26...v0.107.27
+[v0.107.26]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.25...v0.107.26
+[v0.107.25]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.24...v0.107.25
+[v0.107.24]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.23...v0.107.24
+[v0.107.23]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.22...v0.107.23
+[v0.107.22]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.21...v0.107.22
+[v0.107.21]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.20...v0.107.21
+[v0.107.20]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.19...v0.107.20
+[v0.107.19]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.18...v0.107.19
+[v0.107.18]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.17...v0.107.18
+[v0.107.17]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.16...v0.107.17
+[v0.107.16]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.15...v0.107.16
+[v0.107.15]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.14...v0.107.15
+[v0.107.14]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.13...v0.107.14
+[v0.107.13]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.12...v0.107.13
+[v0.107.12]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.11...v0.107.12
+[v0.107.11]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.10...v0.107.11
+[v0.107.10]:  https://github.com/tukimoto/AdGuardHome/compare/v0.107.9...v0.107.10
+[v0.107.9]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.8...v0.107.9
+[v0.107.8]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.7...v0.107.8
+[v0.107.7]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.6...v0.107.7
+[v0.107.6]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.5...v0.107.6
+[v0.107.5]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.4...v0.107.5
+[v0.107.4]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.3...v0.107.4
+[v0.107.3]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.2...v0.107.3
+[v0.107.2]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.1...v0.107.2
+[v0.107.1]:   https://github.com/tukimoto/AdGuardHome/compare/v0.107.0...v0.107.1
+[v0.107.0]:   https://github.com/tukimoto/AdGuardHome/compare/v0.106.3...v0.107.0
+[v0.106.3]:   https://github.com/tukimoto/AdGuardHome/compare/v0.106.2...v0.106.3
+[v0.106.2]:   https://github.com/tukimoto/AdGuardHome/compare/v0.106.1...v0.106.2
+[v0.106.1]:   https://github.com/tukimoto/AdGuardHome/compare/v0.106.0...v0.106.1
+[v0.106.0]:   https://github.com/tukimoto/AdGuardHome/compare/v0.105.2...v0.106.0
+[v0.105.2]:   https://github.com/tukimoto/AdGuardHome/compare/v0.105.1...v0.105.2
+[v0.105.1]:   https://github.com/tukimoto/AdGuardHome/compare/v0.105.0...v0.105.1
+[v0.105.0]:   https://github.com/tukimoto/AdGuardHome/compare/v0.104.3...v0.105.0
+[v0.104.3]:   https://github.com/tukimoto/AdGuardHome/compare/v0.104.2...v0.104.3
+[v0.104.2]:   https://github.com/tukimoto/AdGuardHome/compare/v0.104.1...v0.104.2

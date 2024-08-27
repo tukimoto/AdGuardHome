@@ -4,11 +4,11 @@ import (
 	"net/netip"
 	"slices"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/filtering"
 	"github.com/AdguardTeam/dnsproxy/proxy"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/urlfilter/rules"
 	"github.com/miekg/dns"
+	"github.com/tukimoto/AdGuardHome/internal/filtering"
 )
 
 // TODO(e.burkov):  Name all the methods by a [proxy.MessageConstructor]

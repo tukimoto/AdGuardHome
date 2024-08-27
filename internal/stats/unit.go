@@ -8,9 +8,9 @@ import (
 	"slices"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/aghnet"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
+	"github.com/tukimoto/AdGuardHome/internal/aghnet"
 	"go.etcd.io/bbolt"
 	"golang.org/x/exp/maps"
 )

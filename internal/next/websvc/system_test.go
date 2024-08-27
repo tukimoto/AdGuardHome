@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/AdGuardHome/internal/next/websvc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tukimoto/AdGuardHome/internal/next/websvc"
 )
 
 func TestService_handleGetV1SystemInfo(t *testing.T) {
