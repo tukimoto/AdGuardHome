@@ -18,7 +18,7 @@ const LicenseSettings: React.FC = () => {
   useEffect(() => {
     const fetchLicenseInfo = async () => {
       try {
-        const response = await fetch('/api/license');
+        const response = await fetch('http://172.27.50.173:8080/api/license');
         const data: LicenseInfo = await response.json();
         setLicenseInfo(data);
       } catch (error) {

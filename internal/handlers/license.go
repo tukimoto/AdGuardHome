@@ -3,6 +3,7 @@ package handlers
 import (
 	"database/sql"
 	"encoding/json"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -19,6 +20,7 @@ func GetLicenseInfo(w http.ResponseWriter, r *http.Request) {
 	// ライセンスキーをテキストファイルから読み取る
 	key, err := os.ReadFile("/home/tukimoto/AdGuardHome/internal/config/license_key.txt")
 	if err != nil {
+		log.Printf("ライセンスファイルの読み込みエラー: %v", err)
 		http.Error(w, "ライセンスファイルを読み込めませんでした", http.StatusInternalServerError)
 		return
 	}
@@ -26,6 +28,7 @@ func GetLicenseInfo(w http.ResponseWriter, r *http.Request) {
 	// MySQLに接続
 	db, err := sql.Open("mysql", "root:mss0804mss@tcp(localhost:3306)/licenses")
 	if err != nil {
+		log.Printf("データベース接続エラー: %v", err)
 		http.Error(w, "データベースに接続できませんでした", http.StatusInternalServerError)
 		return
 	}
@@ -36,8 +39,10 @@ func GetLicenseInfo(w http.ResponseWriter, r *http.Request) {
 	err = db.QueryRow(query, string(key)).Scan(&expiration)
 	if err != nil {
 		if err == sql.ErrNoRows {
+			log.Printf("ライセンスキーがデータベースに存在しません: %s", key)
 			http.Error(w, "ライセンスキーが見つかりませんでした", http.StatusNotFound)
 		} else {
+			log.Printf("データベースクエリエラー: %v", err)
 			http.Error(w, "データベースエラーが発生しました", http.StatusInternalServerError)
 		}
 		return
@@ -47,5 +52,10 @@ func GetLicenseInfo(w http.ResponseWriter, r *http.Request) {
 		Key:        string(key),
 		Expiration: expiration,
 	}
-	json.NewEncoder(w).Encode(licenseInfo)
+	err = json.NewEncoder(w).Encode(licenseInfo)
+	if err != nil {
+		log.Printf("ライセンス情報のエンコードエラー: %v", err)
+		http.Error(w, "ライセンス情報の送信に失敗しました", http.StatusInternalServerError)
+		return
+	}
 }

@@ -24,6 +24,7 @@ import (
 var clientBuildFS embed.FS
 
 func main() {
+
 	home.Main(clientBuildFS)
 
 	http.HandleFunc("/api/license", handlers.GetLicenseInfo)
